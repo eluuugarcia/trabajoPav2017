@@ -6,14 +6,28 @@
 
     Private Sub cmdAgregar_Click(sender As Object, e As EventArgs) Handles cmdAgregar.Click
 
-        Dim id As Integer = BDHelper2.GetPrestaciones().Rows.Count + 1
+        Dim param As New List(Of Object)
+        param.Add(txtNombre.Text)
+        param.Add(txtPrecio.Text)
+        param.Add(txtDuracion.Text)
 
-        Dim str As String = "INSERT INTO Prestaciones (idPrestacion, nombre, descripcion, precio, duracion) VALUES ("
-        str += id & ",'" & txtNombre.Text & "','" & rtbDescripcion.Text & "'," & txtPrecio.Text & "," & txtDuracion.Text & ")"
 
-        BDHelper2.agregarPrestacionPorPlan(str)
-        MsgBox("La prestacion se ha registrado")
-        llenarGrid(BDHelper2.GetPrestaciones())
+        If BDHelper2.validarDatos(param.ToArray()) = True Then
+
+            Dim str As String = "INSERT INTO Prestaciones (nombre, descripcion, precio, duracion) VALUES ("
+            str += "'" & txtNombre.Text & "','" & rtbDescripcion.Text & "'," & txtPrecio.Text & "," & txtDuracion.Text & ")"
+
+            BDHelper2.agregarPrestacionPorPlan(str)
+            MsgBox("La prestacion se ha registrado")
+            llenarGrid(BDHelper2.GetPrestaciones())
+
+            txtDuracion.Text = ""
+            txtNombre.Text = ""
+            txtPrecio.Text = ""
+
+        End If
+
+        
 
     End Sub
 
