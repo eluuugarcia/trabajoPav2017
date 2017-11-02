@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -19,9 +35,12 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\..\..\Programita\</OutputPath>
     <DocumentationFile>ConsultorioOdontologico.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42108,42109</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,7 +50,10 @@
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>ConsultorioOdontologico.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42108,42109</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -45,13 +67,40 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A7C3512769D932DA5A150EC2524C85A671C093AA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ConsultorioOdontologico_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>images.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -73,11 +122,92 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alergia.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Odontologo.vb" />
-    <Compile Include="GUI\Obra Social\frmAgregarAlergiaInexistente.Designer.vb">
+    <Compile Include="Clases\Turno.vb" />
+    <Compile Include="DataSetPrestaciones.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPrestaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataSetEnfermedades.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEnfermedades.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataSetOdontologos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetOdontologos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataSetPacientes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPacientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataSetPacientes.vb">
+      <DependentUpon>DataSetPacientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleFactura.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enfermedade.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EnfermedadesXPaciente.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Especialidad.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoTurno.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Factura.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\frmMenuReportes.Designer.vb">
+      <DependentUpon>frmMenuReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\frmMenuReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\frmReporteEnfermedades.Designer.vb">
+      <DependentUpon>frmReporteEnfermedades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\frmReporteEnfermedades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\frmReporteOdontologos.Designer.vb">
+      <DependentUpon>frmReporteOdontologos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\frmReporteOdontologos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\frmReportePacientesvb.Designer.vb">
+      <DependentUpon>frmReportePacientesvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\frmReportePacientesvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\frmReportePrestaciones.Designer.vb">
+      <DependentUpon>frmReportePrestaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\frmReportePrestaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Turnos\frmTurnos.Designer.vb">
+      <DependentUpon>frmTurnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Turnos\frmTurnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Pacientes\frmAgregarAlergiaInexistente.Designer.vb">
       <DependentUpon>frmAgregarAlergiaInexistente.vb</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Obra Social\frmAgregarAlergiaInexistente.vb">
+    <Compile Include="GUI\Pacientes\frmAgregarAlergiaInexistente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Odontologos\frmAgregarEspecialidad.Designer.vb">
@@ -154,6 +284,12 @@
     <Compile Include="GUI\Pacientes\frmAgregarHC.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GUI\Pacientes\frmAgregarHCCompleta.Designer.vb">
+      <DependentUpon>frmAgregarHCCompleta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Pacientes\frmAgregarHCCompleta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GUI\Pacientes\frmAgregrAlergiaAPaciente.Designer.vb">
       <DependentUpon>frmAgregrAlergiaAPaciente.vb</DependentUpon>
     </Compile>
@@ -166,7 +302,37 @@
     <Compile Include="GUI\Pacientes\HistoriaClinicavb.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GUI\Turnos\frmAgregarTurno.Designer.vb">
+      <DependentUpon>frmAgregarTurno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Turnos\frmAgregarTurno.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Helper\BDHelper2.vb" />
+    <Compile Include="HistoriaClinica.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mdlConsultorioModelo.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mdlConsultorioModelo.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mdlConsultorioModelo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mdlConsultorioModelo.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="mdlConsultorioModelo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Medicamento.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MedicosXEspecialidad.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -182,9 +348,62 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ObraSocial.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObraSocialXPaciente.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Odontologo.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Paciente.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Plane.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prestacione.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrestacionesPorPlan.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Receta.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoDiente.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Turno.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicacion.vb">
+      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GUI\Obra Social\frmAgregarAlergiaInexistente.resx">
+    <EmbeddedResource Include="GUI\Reportes\frmMenuReportes.resx">
+      <DependentUpon>frmMenuReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\frmReporteEnfermedades.resx">
+      <DependentUpon>frmReporteEnfermedades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\frmReporteOdontologos.resx">
+      <DependentUpon>frmReporteOdontologos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\frmReportePacientesvb.resx">
+      <DependentUpon>frmReportePacientesvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\frmReportePrestaciones.resx">
+      <DependentUpon>frmReportePrestaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\Reportes\reportePrestaciones.rdlc" />
+    <EmbeddedResource Include="GUI\Reportes\Reportes\RreporteEnfermedades.rdlc" />
+    <EmbeddedResource Include="GUI\Turnos\frmTurnos.resx">
+      <DependentUpon>frmTurnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Pacientes\frmAgregarAlergiaInexistente.resx">
       <DependentUpon>frmAgregarAlergiaInexistente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Odontologos\frmAgregarEspecialidad.resx">
@@ -223,11 +442,17 @@
     <EmbeddedResource Include="GUI\Pacientes\frmAgregarHC.resx">
       <DependentUpon>frmAgregarHC.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Pacientes\frmAgregarHCCompleta.resx">
+      <DependentUpon>frmAgregarHCCompleta.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Pacientes\frmAgregrAlergiaAPaciente.resx">
       <DependentUpon>frmAgregrAlergiaAPaciente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Pacientes\HistoriaClinicavb.resx">
       <DependentUpon>HistoriaClinicavb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Turnos\frmAgregarTurno.resx">
+      <DependentUpon>frmAgregarTurno.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -235,20 +460,120 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\Reportes\reporteOdontologos.rdlc" />
+    <EmbeddedResource Include="GUI\Reportes\Reportes\reportePacientes.rdlc" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="mdlConsultorioModelo.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>mdlConsultorioModelo.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataSetPrestaciones.xsc">
+      <DependentUpon>DataSetPrestaciones.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPrestaciones.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPrestaciones.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetPrestaciones.xss">
+      <DependentUpon>DataSetPrestaciones.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetEnfermedades.xsc">
+      <DependentUpon>DataSetEnfermedades.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetEnfermedades.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEnfermedades.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\DataSetEnfermedades.xss">
+      <DependentUpon>DataSetEnfermedades.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetOdontologos.xsc">
+      <DependentUpon>DataSetOdontologos.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetOdontologos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetOdontologos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\DataSetOdontologos.xss">
+      <DependentUpon>DataSetOdontologos.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetPacientes.xsc">
+      <DependentUpon>DataSetPacientes.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetPacientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPacientes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\DataSetPacientes.xss">
+      <DependentUpon>DataSetPacientes.xsd</DependentUpon>
+    </None>
+    <None Include="mdlConsultorioModelo.edmx.diagram">
+      <DependentUpon>mdlConsultorioModelo.edmx</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.ObraSocialTableAdapter.datasource" />
+    <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.ObraSocialXPacienteTableAdapter.datasource" />
+    <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.PacientesTableAdapter.datasource" />
+    <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.PlanesTableAdapter.datasource" />
+    <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="My Project\DataSources\db_consultorio_odontologicoDataSet.datasource" />
+    <None Include="My Project\DataSources\db_consultorio_odontologicoDataSet2.datasource" />
+    <None Include="My Project\DataSources\db_consultorio_odontologicoDataSet2.ObraSocialXPacienteDataTable.datasource" />
+    <None Include="My Project\DataSources\db_consultorio_odontologicoEntities3.datasource" />
+    <None Include="My Project\DataSources\Paciente.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images.ico" />
+    <Content Include="mdlConsultorioModelo.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>mdlConsultorioModelo.edmx</DependentUpon>
+      <LastGenOutput>mdlConsultorioModelo.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="mdlConsultorioModelo.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>mdlConsultorioModelo.edmx</DependentUpon>
+      <LastGenOutput>mdlConsultorioModelo.vb</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
