@@ -2,13 +2,6 @@ C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontolog
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.exe
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.pdb
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.xml
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmABMPacientes.resources
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.Resources.resources
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.vbproj.GenerateResource.Cache
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.exe
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.xml
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.pdb
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmMenu.resources
 G:\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.exe.config
 G:\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.exe
 G:\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.xml
@@ -58,17 +51,94 @@ G:\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioO
 G:\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmABMOdontologos.resources
 G:\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarPrestacionPorPlan.resources
 G:\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmObraSocial.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.exe.config
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.exe
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.xml
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.pdb
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.exe
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.pdb
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.xml
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.vbprojResolveAssemblyReference.cache
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarAlergiaInexistente.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEspecialidad.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmABMPacientes.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarPlanesEnObraSocial.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarObraSocial.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarPrestacionInexistente.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmABMOdontologos.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarPrestacionPorPlan.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmMenu.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmObraSocial.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEnfermedadAPaciente.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEnfermedadInexistente.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarHC.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregrAlergiaAPaciente.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmHistoriaClinicavb.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.Resources.resources
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.vbproj.GenerateResource.Cache
+D:\Ailin\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarHCCompleta.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.exe.config
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.exe
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.xml
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.pdb
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.exe
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.pdb
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\bin\Debug\ConsultorioOdontologico.xml
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.vbprojResolveAssemblyReference.cache
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarAlergiaInexistente.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEspecialidad.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmABMPacientes.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarPlanesEnObraSocial.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarObraSocial.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarPrestacionInexistente.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmABMOdontologos.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarPrestacionPorPlan.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmMenu.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmObraSocial.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEnfermedadAPaciente.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEnfermedadInexistente.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarHC.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarHCCompleta.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregrAlergiaAPaciente.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmHistoriaClinicavb.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.Resources.resources
+G:\TP PAV Nuevo\Micka\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.vbproj.GenerateResource.Cache
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmTurnos.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarAlergiaInexistente.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEspecialidad.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmABMPacientes.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarPlanesEnObraSocial.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarObraSocial.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarPrestacionInexistente.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmABMOdontologos.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarPrestacionPorPlan.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmMenu.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmObraSocial.resources
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.vbprojResolveAssemblyReference.cache
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmHistoriaClinicavb.resources
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarAlergiaInexistente.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEnfermedadAPaciente.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEnfermedadInexistente.resources
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregrAlergiaAPaciente.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarHC.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarHCCompleta.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregrAlergiaAPaciente.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmHistoriaClinicavb.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarTurno.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.Resources.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.vbproj.GenerateResource.Cache
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\RdlCompile.cache
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\RdlCompile.compiled
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmMenuReportes.resources
+C:\Users\Elu\Desktop\Programita\ConsultorioOdontologico.exe.config
+C:\Users\Elu\Desktop\Programita\ConsultorioOdontologico.exe.manifest
+C:\Users\Elu\Desktop\Programita\ConsultorioOdontologico.application
+C:\Users\Elu\Desktop\Programita\ConsultorioOdontologico.exe
+C:\Users\Elu\Desktop\Programita\ConsultorioOdontologico.pdb
+C:\Users\Elu\Desktop\Programita\ConsultorioOdontologico.xml
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.exe.manifest
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.application
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.exe
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.xml
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.pdb
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.vbprojResolveAssemblyReference.cache
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmReportePacientesvb.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmReporteOdontologos.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmReporteEnfermedades.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmReportePrestaciones.resources

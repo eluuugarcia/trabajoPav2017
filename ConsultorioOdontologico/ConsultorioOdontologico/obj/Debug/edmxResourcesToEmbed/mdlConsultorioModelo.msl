@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_consultorio_odontologicoModelStoreContainer" CdmEntityContainer="consultorioEntity">
+    <EntitySetMapping Name="Alergias">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Alergia">
+        <MappingFragment StoreEntitySet="Alergias">
+          <ScalarProperty Name="idAlergia" ColumnName="idAlergia" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleFacturas">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.DetalleFactura">
+        <MappingFragment StoreEntitySet="DetalleFactura">
+          <ScalarProperty Name="nroFactura" ColumnName="nroFactura" />
+          <ScalarProperty Name="idPrestacion" ColumnName="idPrestacion" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Enfermedades">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Enfermedade">
+        <MappingFragment StoreEntitySet="Enfermedades">
+          <ScalarProperty Name="idEnfermedades" ColumnName="idEnfermedades" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnfermedadesXPacientes">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.EnfermedadesXPaciente">
+        <MappingFragment StoreEntitySet="EnfermedadesXPaciente">
+          <ScalarProperty Name="dniPaciente" ColumnName="dniPaciente" />
+          <ScalarProperty Name="idEnfermedad" ColumnName="idEnfermedad" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Especialidads">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Especialidad">
+        <MappingFragment StoreEntitySet="Especialidad">
+          <ScalarProperty Name="idEspecialidad" ColumnName="idEspecialidad" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadoTurnos">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.EstadoTurno">
+        <MappingFragment StoreEntitySet="EstadoTurnos">
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facturas">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Factura">
+        <MappingFragment StoreEntitySet="Factura">
+          <ScalarProperty Name="nroFactura" ColumnName="nroFactura" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="dniPaciente" ColumnName="dniPaciente" />
+          <ScalarProperty Name="legajoOdontologo" ColumnName="legajoOdontologo" />
+          <ScalarProperty Name="idObraSocial" ColumnName="idObraSocial" />
+          <ScalarProperty Name="idPlan" ColumnName="idPlan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoriaClinicas">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.HistoriaClinica">
+        <MappingFragment StoreEntitySet="HistoriaClinica">
+          <ScalarProperty Name="dniPaciente" ColumnName="dniPaciente" />
+          <ScalarProperty Name="idPrestacion" ColumnName="idPrestacion" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="idUbicacion" ColumnName="idUbicacion" />
+          <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medicamentos">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Medicamento">
+        <MappingFragment StoreEntitySet="Medicamentos">
+          <ScalarProperty Name="idMedicamento" ColumnName="idMedicamento" />
+          <ScalarProperty Name="droga" ColumnName="droga" />
+          <ScalarProperty Name="laboratorio" ColumnName="laboratorio" />
+          <ScalarProperty Name="restricciones" ColumnName="restricciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicosXEspecialidads">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.MedicosXEspecialidad">
+        <MappingFragment StoreEntitySet="MedicosXEspecialidad">
+          <ScalarProperty Name="idEspecialidad" ColumnName="idEspecialidad" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObraSocials">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.ObraSocial">
+        <MappingFragment StoreEntitySet="ObraSocial">
+          <ScalarProperty Name="idOS" ColumnName="idOS" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObraSocialXPacientes">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.ObraSocialXPaciente">
+        <MappingFragment StoreEntitySet="ObraSocialXPaciente">
+          <ScalarProperty Name="idNroAfiliado" ColumnName="idNroAfiliado" />
+          <ScalarProperty Name="idPlan" ColumnName="idPlan" />
+          <ScalarProperty Name="idObraSocial" ColumnName="idObraSocial" />
+          <ScalarProperty Name="dniPaciente" ColumnName="dniPaciente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Odontologos">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Odontologo">
+        <MappingFragment StoreEntitySet="Odontologos">
+          <ScalarProperty Name="legajo" ColumnName="legajo" />
+          <ScalarProperty Name="dniOdontologo" ColumnName="dniOdontologo" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+          <ScalarProperty Name="eMail" ColumnName="eMail" />
+          <ScalarProperty Name="domicilio" ColumnName="domicilio" />
+          <ScalarProperty Name="nroMatricula" ColumnName="nroMatricula" />
+          <ScalarProperty Name="fechaIngreso" ColumnName="fechaIngreso" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="telContacto" ColumnName="telContacto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pacientes">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Paciente">
+        <MappingFragment StoreEntitySet="Pacientes">
+          <ScalarProperty Name="dniPaciente" ColumnName="dniPaciente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+          <ScalarProperty Name="telContacto" ColumnName="telContacto" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Planes">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Plane">
+        <MappingFragment StoreEntitySet="Planes">
+          <ScalarProperty Name="idPlan" ColumnName="idPlan" />
+          <ScalarProperty Name="idObraSocial" ColumnName="idObraSocial" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prestaciones">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Prestacione">
+        <MappingFragment StoreEntitySet="Prestaciones">
+          <ScalarProperty Name="idPrestacion" ColumnName="idPrestacion" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="duracion" ColumnName="duracion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrestacionesPorPlans">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.PrestacionesPorPlan">
+        <MappingFragment StoreEntitySet="PrestacionesPorPlan">
+          <ScalarProperty Name="idPlan" ColumnName="idPlan" />
+          <ScalarProperty Name="idObraSocial" ColumnName="idObraSocial" />
+          <ScalarProperty Name="idPrestacion" ColumnName="idPrestacion" />
+          <ScalarProperty Name="montoCubierto" ColumnName="montoCubierto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recetas">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Receta">
+        <MappingFragment StoreEntitySet="Receta">
+          <ScalarProperty Name="legajoOdontologo" ColumnName="legajoOdontologo" />
+          <ScalarProperty Name="dniPaciente" ColumnName="dniPaciente" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="hora" ColumnName="hora" />
+          <ScalarProperty Name="idMedicamento" ColumnName="idMedicamento" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoDientes">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.TipoDiente">
+        <MappingFragment StoreEntitySet="TipoDiente">
+          <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Turnoes">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Turno">
+        <MappingFragment StoreEntitySet="Turno">
+          <ScalarProperty Name="legajoOdontologo" ColumnName="legajoOdontologo" />
+          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="hora" ColumnName="hora" />
+          <ScalarProperty Name="idPrestacion" ColumnName="idPrestacion" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ubicacions">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Ubicacion">
+        <MappingFragment StoreEntitySet="Ubicacion">
+          <ScalarProperty Name="idUbicacion" ColumnName="idUbicacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

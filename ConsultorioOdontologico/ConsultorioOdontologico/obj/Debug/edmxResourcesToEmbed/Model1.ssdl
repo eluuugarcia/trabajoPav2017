@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_consultorio_odontologicoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ObraSocial">
+    <Key>
+      <PropertyRef Name="idOS" />
+    </Key>
+    <Property Name="idOS" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ObraSocialXPaciente">
+    <Key>
+      <PropertyRef Name="idNroAfiliado" />
+      <PropertyRef Name="idPlan" />
+      <PropertyRef Name="idObraSocial" />
+    </Key>
+    <Property Name="idNroAfiliado" Type="int" Nullable="false" />
+    <Property Name="idPlan" Type="int" Nullable="false" />
+    <Property Name="idObraSocial" Type="int" Nullable="false" />
+    <Property Name="dniPaciente" Type="int" />
+  </EntityType>
+  <EntityType Name="Pacientes">
+    <Key>
+      <PropertyRef Name="dniPaciente" />
+    </Key>
+    <Property Name="dniPaciente" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="apellido" Type="varchar" MaxLength="50" />
+    <Property Name="sexo" Type="nchar" MaxLength="10" />
+    <Property Name="fechaNacimiento" Type="date" />
+    <Property Name="telContacto" Type="varchar" MaxLength="50" />
+    <Property Name="activo" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Planes">
+    <Key>
+      <PropertyRef Name="idPlan" />
+      <PropertyRef Name="idObraSocial" />
+    </Key>
+    <Property Name="idPlan" Type="int" Nullable="false" />
+    <Property Name="idObraSocial" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="ObraSocialPorPaciente_ObraSocial">
+    <End Role="Planes" Type="Self.Planes" Multiplicity="1" />
+    <End Role="ObraSocialXPaciente" Type="Self.ObraSocialXPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Planes">
+        <PropertyRef Name="idPlan" />
+        <PropertyRef Name="idObraSocial" />
+      </Principal>
+      <Dependent Role="ObraSocialXPaciente">
+        <PropertyRef Name="idPlan" />
+        <PropertyRef Name="idObraSocial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PlanesPorObraSocial">
+    <End Role="ObraSocial" Type="Self.ObraSocial" Multiplicity="1" />
+    <End Role="Planes" Type="Self.Planes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ObraSocial">
+        <PropertyRef Name="idOS" />
+      </Principal>
+      <Dependent Role="Planes">
+        <PropertyRef Name="idObraSocial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_consultorio_odontologicoModelStoreContainer">
+    <EntitySet Name="ObraSocial" EntityType="Self.ObraSocial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ObraSocialXPaciente" EntityType="Self.ObraSocialXPaciente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pacientes" EntityType="Self.Pacientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Planes" EntityType="Self.Planes" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="ObraSocialPorPaciente_ObraSocial" Association="Self.ObraSocialPorPaciente_ObraSocial">
+      <End Role="Planes" EntitySet="Planes" />
+      <End Role="ObraSocialXPaciente" EntitySet="ObraSocialXPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="PlanesPorObraSocial" Association="Self.PlanesPorObraSocial">
+      <End Role="ObraSocial" EntitySet="ObraSocial" />
+      <End Role="Planes" EntitySet="Planes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

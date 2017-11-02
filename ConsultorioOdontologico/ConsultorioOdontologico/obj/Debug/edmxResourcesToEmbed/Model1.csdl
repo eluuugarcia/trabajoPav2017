@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_consultorio_odontologicoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ObraSocial">
+    <Key>
+      <PropertyRef Name="idOS" />
+    </Key>
+    <Property Name="idOS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Planes" Relationship="Self.PlanesPorObraSocial" FromRole="ObraSocial" ToRole="Planes" />
+  </EntityType>
+  <EntityType Name="ObraSocialXPaciente">
+    <Key>
+      <PropertyRef Name="idNroAfiliado" />
+      <PropertyRef Name="idPlan" />
+      <PropertyRef Name="idObraSocial" />
+    </Key>
+    <Property Name="idNroAfiliado" Type="Int32" Nullable="false" />
+    <Property Name="idPlan" Type="Int32" Nullable="false" />
+    <Property Name="idObraSocial" Type="Int32" Nullable="false" />
+    <Property Name="dniPaciente" Type="Int32" />
+    <NavigationProperty Name="Plane" Relationship="Self.ObraSocialPorPaciente_ObraSocial" FromRole="ObraSocialXPaciente" ToRole="Planes" />
+  </EntityType>
+  <EntityType Name="Paciente">
+    <Key>
+      <PropertyRef Name="dniPaciente" />
+    </Key>
+    <Property Name="dniPaciente" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="telContacto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Plane">
+    <Key>
+      <PropertyRef Name="idPlan" />
+      <PropertyRef Name="idObraSocial" />
+    </Key>
+    <Property Name="idPlan" Type="Int32" Nullable="false" />
+    <Property Name="idObraSocial" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ObraSocial" Relationship="Self.PlanesPorObraSocial" FromRole="Planes" ToRole="ObraSocial" />
+    <NavigationProperty Name="ObraSocialXPacientes" Relationship="Self.ObraSocialPorPaciente_ObraSocial" FromRole="Planes" ToRole="ObraSocialXPaciente" />
+  </EntityType>
+  <Association Name="PlanesPorObraSocial">
+    <End Role="ObraSocial" Type="Self.ObraSocial" Multiplicity="1" />
+    <End Role="Planes" Type="Self.Plane" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ObraSocial">
+        <PropertyRef Name="idOS" />
+      </Principal>
+      <Dependent Role="Planes">
+        <PropertyRef Name="idObraSocial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ObraSocialPorPaciente_ObraSocial">
+    <End Role="Planes" Type="Self.Plane" Multiplicity="1" />
+    <End Role="ObraSocialXPaciente" Type="Self.ObraSocialXPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Planes">
+        <PropertyRef Name="idPlan" />
+        <PropertyRef Name="idObraSocial" />
+      </Principal>
+      <Dependent Role="ObraSocialXPaciente">
+        <PropertyRef Name="idPlan" />
+        <PropertyRef Name="idObraSocial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_consultorio_odontologicoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ObraSocials" EntityType="Self.ObraSocial" />
+    <EntitySet Name="ObraSocialXPacientes" EntityType="Self.ObraSocialXPaciente" />
+    <EntitySet Name="Pacientes" EntityType="Self.Paciente" />
+    <EntitySet Name="Planes" EntityType="Self.Plane" />
+    <AssociationSet Name="PlanesPorObraSocial" Association="Self.PlanesPorObraSocial">
+      <End Role="ObraSocial" EntitySet="ObraSocials" />
+      <End Role="Planes" EntitySet="Planes" />
+    </AssociationSet>
+    <AssociationSet Name="ObraSocialPorPaciente_ObraSocial" Association="Self.ObraSocialPorPaciente_ObraSocial">
+      <End Role="Planes" EntitySet="Planes" />
+      <End Role="ObraSocialXPaciente" EntitySet="ObraSocialXPacientes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_consultorio_odontologicoModelStoreContainer" CdmEntityContainer="db_consultorio_odontologicoEntities">
+    <EntitySetMapping Name="ObraSocials">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.ObraSocial">
+        <MappingFragment StoreEntitySet="ObraSocial">
+          <ScalarProperty Name="idOS" ColumnName="idOS" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObraSocialXPacientes">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.ObraSocialXPaciente">
+        <MappingFragment StoreEntitySet="ObraSocialXPaciente">
+          <ScalarProperty Name="idNroAfiliado" ColumnName="idNroAfiliado" />
+          <ScalarProperty Name="idPlan" ColumnName="idPlan" />
+          <ScalarProperty Name="idObraSocial" ColumnName="idObraSocial" />
+          <ScalarProperty Name="dniPaciente" ColumnName="dniPaciente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pacientes">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Paciente">
+        <MappingFragment StoreEntitySet="Pacientes">
+          <ScalarProperty Name="dniPaciente" ColumnName="dniPaciente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+          <ScalarProperty Name="telContacto" ColumnName="telContacto" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Planes">
+      <EntityTypeMapping TypeName="db_consultorio_odontologicoModel.Plane">
+        <MappingFragment StoreEntitySet="Planes">
+          <ScalarProperty Name="idPlan" ColumnName="idPlan" />
+          <ScalarProperty Name="idObraSocial" ColumnName="idObraSocial" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

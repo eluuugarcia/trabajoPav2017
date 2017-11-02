@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_consultorio_odontologicoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alergia">
+    <Key>
+      <PropertyRef Name="idAlergia" />
+    </Key>
+    <Property Name="idAlergia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DetalleFactura">
+    <Key>
+      <PropertyRef Name="nroFactura" />
+      <PropertyRef Name="idPrestacion" />
+    </Key>
+    <Property Name="nroFactura" Type="Int32" Nullable="false" />
+    <Property Name="idPrestacion" Type="Int32" Nullable="false" />
+    <Property Name="monto" Type="Double" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK_DetalleFactura_Facturas" FromRole="DetalleFactura" ToRole="Factura" />
+    <NavigationProperty Name="Prestacione" Relationship="Self.FK_DetalleFactura_Prestaciones" FromRole="DetalleFactura" ToRole="Prestaciones" />
+  </EntityType>
+  <EntityType Name="Enfermedade">
+    <Key>
+      <PropertyRef Name="idEnfermedades" />
+    </Key>
+    <Property Name="idEnfermedades" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EnfermedadesXPacientes" Relationship="Self.FK_dbo_EnfermedadesPorPaciente_dbo_Enfermedades" FromRole="Enfermedades" ToRole="EnfermedadesXPaciente" />
+  </EntityType>
+  <EntityType Name="EnfermedadesXPaciente">
+    <Key>
+      <PropertyRef Name="dniPaciente" />
+      <PropertyRef Name="idEnfermedad" />
+    </Key>
+    <Property Name="dniPaciente" Type="Int32" Nullable="false" />
+    <Property Name="idEnfermedad" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Enfermedade" Relationship="Self.FK_dbo_EnfermedadesPorPaciente_dbo_Enfermedades" FromRole="EnfermedadesXPaciente" ToRole="Enfermedades" />
+    <NavigationProperty Name="Paciente" Relationship="Self.FK_dbo_EnfermedadesPorPaciente_dbo_Pacientes" FromRole="EnfermedadesXPaciente" ToRole="Pacientes" />
+  </EntityType>
+  <EntityType Name="Especialidad">
+    <Key>
+      <PropertyRef Name="idEspecialidad" />
+    </Key>
+    <Property Name="idEspecialidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MedicosXEspecialidads" Relationship="Self.FK_MedicosXEspecialidad_Especialidades" FromRole="Especialidad" ToRole="MedicosXEspecialidad" />
+  </EntityType>
+  <EntityType Name="EstadoTurno">
+    <Key>
+      <PropertyRef Name="idEstado" />
+    </Key>
+    <Property Name="idEstado" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="nroFactura" />
+    </Key>
+    <Property Name="nroFactura" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Precision="0" />
+    <Property Name="dniPaciente" Type="Int32" />
+    <Property Name="legajoOdontologo" Type="Int32" />
+    <Property Name="idObraSocial" Type="Int32" />
+    <Property Name="idPlan" Type="Int32" />
+    <NavigationProperty Name="DetalleFacturas" Relationship="Self.FK_DetalleFactura_Facturas" FromRole="Factura" ToRole="DetalleFactura" />
+    <NavigationProperty Name="Odontologo" Relationship="Self.FK_Factura_Odontologo" FromRole="Factura" ToRole="Odontologos" />
+    <NavigationProperty Name="Paciente" Relationship="Self.FK_Factura_Paciente" FromRole="Factura" ToRole="Pacientes" />
+    <NavigationProperty Name="Plane" Relationship="Self.FK_Factura_PrestacionesXPlan" FromRole="Factura" ToRole="Planes" />
+  </EntityType>
+  <EntityType Name="HistoriaClinica">
+    <Key>
+      <PropertyRef Name="dniPaciente" />
+      <PropertyRef Name="idPrestacion" />
+      <PropertyRef Name="fecha" />
+    </Key>
+    <Property Name="dniPaciente" Type="Int32" Nullable="false" />
+    <Property Name="idPrestacion" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="idUbicacion" Type="Int32" />
+    <Property Name="idTipo" Type="Int32" />
+    <Property Name="observaciones" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Paciente" Relationship="Self.FK_dbo_HistoriaClinica_dbo_Paciente" FromRole="HistoriaClinica" ToRole="Pacientes" />
+    <NavigationProperty Name="Prestacione" Relationship="Self.FK_dbo_HistoriaClinica_dbo_Prestaciones" FromRole="HistoriaClinica" ToRole="Prestaciones" />
+    <NavigationProperty Name="TipoDiente" Relationship="Self.FK_HistoriaClinica_TipoDiente" FromRole="HistoriaClinica" ToRole="TipoDiente" />
+    <NavigationProperty Name="Ubicacion" Relationship="Self.FK_HistoriaClinica_Ubicacion" FromRole="HistoriaClinica" ToRole="Ubicacion" />
+  </EntityType>
+  <EntityType Name="Medicamento">
+    <Key>
+      <PropertyRef Name="idMedicamento" />
+    </Key>
+    <Property Name="idMedicamento" Type="Int32" Nullable="false" />
+    <Property Name="droga" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="laboratorio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="restricciones" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MedicosXEspecialidad">
+    <Key>
+      <PropertyRef Name="idEspecialidad" />
+      <PropertyRef Name="idMedico" />
+    </Key>
+    <Property Name="idEspecialidad" Type="Int32" Nullable="false" />
+    <Property Name="idMedico" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Especialidad" Relationship="Self.FK_MedicosXEspecialidad_Especialidades" FromRole="MedicosXEspecialidad" ToRole="Especialidad" />
+  </EntityType>
+  <EntityType Name="ObraSocial">
+    <Key>
+      <PropertyRef Name="idOS" />
+    </Key>
+    <Property Name="idOS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Planes" Relationship="Self.PlanesPorObraSocial" FromRole="ObraSocial" ToRole="Planes" />
+  </EntityType>
+  <EntityType Name="ObraSocialXPaciente">
+    <Key>
+      <PropertyRef Name="idNroAfiliado" />
+      <PropertyRef Name="idPlan" />
+      <PropertyRef Name="idObraSocial" />
+    </Key>
+    <Property Name="idNroAfiliado" Type="Int32" Nullable="false" />
+    <Property Name="idPlan" Type="Int32" Nullable="false" />
+    <Property Name="idObraSocial" Type="Int32" Nullable="false" />
+    <Property Name="dniPaciente" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Paciente" Relationship="Self.FK_Pacientes_ObraSocialXPaciente" FromRole="ObraSocialXPaciente" ToRole="Pacientes" />
+    <NavigationProperty Name="Plane" Relationship="Self.ObraSocialPorPaciente_ObraSocial" FromRole="ObraSocialXPaciente" ToRole="Planes" />
+  </EntityType>
+  <EntityType Name="Odontologo">
+    <Key>
+      <PropertyRef Name="legajo" />
+    </Key>
+    <Property Name="legajo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dniOdontologo" Type="Int32" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="eMail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="domicilio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nroMatricula" Type="Int32" />
+    <Property Name="fechaIngreso" Type="DateTime" Precision="0" />
+    <Property Name="activo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="telContacto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Facturas" Relationship="Self.FK_Factura_Odontologo" FromRole="Odontologos" ToRole="Factura" />
+    <NavigationProperty Name="Recetas" Relationship="Self.FK_Receta_Odontologos" FromRole="Odontologos" ToRole="Receta" />
+  </EntityType>
+  <EntityType Name="Paciente">
+    <Key>
+      <PropertyRef Name="dniPaciente" />
+    </Key>
+    <Property Name="dniPaciente" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="telContacto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="EnfermedadesXPacientes" Relationship="Self.FK_dbo_EnfermedadesPorPaciente_dbo_Pacientes" FromRole="Pacientes" ToRole="EnfermedadesXPaciente" />
+    <NavigationProperty Name="Facturas" Relationship="Self.FK_Factura_Paciente" FromRole="Pacientes" ToRole="Factura" />
+    <NavigationProperty Name="HistoriaClinicas" Relationship="Self.FK_dbo_HistoriaClinica_dbo_Paciente" FromRole="Pacientes" ToRole="HistoriaClinica" />
+    <NavigationProperty Name="ObraSocialXPacientes" Relationship="Self.FK_Pacientes_ObraSocialXPaciente" FromRole="Pacientes" ToRole="ObraSocialXPaciente" />
+    <NavigationProperty Name="Recetas" Relationship="Self.FK_Receta_Pacientes" FromRole="Pacientes" ToRole="Receta" />
+  </EntityType>
+  <EntityType Name="Plane">
+    <Key>
+      <PropertyRef Name="idPlan" />
+      <PropertyRef Name="idObraSocial" />
+    </Key>
+    <Property Name="idPlan" Type="Int32" Nullable="false" />
+    <Property Name="idObraSocial" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Facturas" Relationship="Self.FK_Factura_PrestacionesXPlan" FromRole="Planes" ToRole="Factura" />
+    <NavigationProperty Name="ObraSocial" Relationship="Self.PlanesPorObraSocial" FromRole="Planes" ToRole="ObraSocial" />
+    <NavigationProperty Name="ObraSocialXPacientes" Relationship="Self.ObraSocialPorPaciente_ObraSocial" FromRole="Planes" ToRole="ObraSocialXPaciente" />
+    <NavigationProperty Name="PrestacionesPorPlans" Relationship="Self.PrestacionesXPlan" FromRole="Planes" ToRole="PrestacionesPorPlan" />
+  </EntityType>
+  <EntityType Name="Prestacione">
+    <Key>
+      <PropertyRef Name="idPrestacion" />
+    </Key>
+    <Property Name="idPrestacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="precio" Type="Double" />
+    <Property Name="duracion" Type="Int32" />
+    <NavigationProperty Name="DetalleFacturas" Relationship="Self.FK_DetalleFactura_Prestaciones" FromRole="Prestaciones" ToRole="DetalleFactura" />
+    <NavigationProperty Name="HistoriaClinicas" Relationship="Self.FK_dbo_HistoriaClinica_dbo_Prestaciones" FromRole="Prestaciones" ToRole="HistoriaClinica" />
+  </EntityType>
+  <EntityType Name="PrestacionesPorPlan">
+    <Key>
+      <PropertyRef Name="idPlan" />
+      <PropertyRef Name="idObraSocial" />
+      <PropertyRef Name="idPrestacion" />
+    </Key>
+    <Property Name="idPlan" Type="Int32" Nullable="false" />
+    <Property Name="idObraSocial" Type="Int32" Nullable="false" />
+    <Property Name="idPrestacion" Type="Int32" Nullable="false" />
+    <Property Name="montoCubierto" Type="Double" />
+    <NavigationProperty Name="Plane" Relationship="Self.PrestacionesXPlan" FromRole="PrestacionesPorPlan" ToRole="Planes" />
+  </EntityType>
+  <EntityType Name="Receta">
+    <Key>
+      <PropertyRef Name="legajoOdontologo" />
+      <PropertyRef Name="dniPaciente" />
+      <PropertyRef Name="fecha" />
+      <PropertyRef Name="hora" />
+      <PropertyRef Name="idMedicamento" />
+    </Key>
+    <Property Name="legajoOdontologo" Type="Int32" Nullable="false" />
+    <Property Name="dniPaciente" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="hora" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="idMedicamento" Type="Int32" Nullable="false" />
+    <Property Name="observaciones" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Odontologo" Relationship="Self.FK_Receta_Odontologos" FromRole="Receta" ToRole="Odontologos" />
+    <NavigationProperty Name="Paciente" Relationship="Self.FK_Receta_Pacientes" FromRole="Receta" ToRole="Pacientes" />
+  </EntityType>
+  <EntityType Name="TipoDiente">
+    <Key>
+      <PropertyRef Name="idTipo" />
+    </Key>
+    <Property Name="idTipo" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="HistoriaClinicas" Relationship="Self.FK_HistoriaClinica_TipoDiente" FromRole="TipoDiente" ToRole="HistoriaClinica" />
+  </EntityType>
+  <EntityType Name="Turno">
+    <Key>
+      <PropertyRef Name="legajoOdontologo" />
+      <PropertyRef Name="fecha" />
+      <PropertyRef Name="hora" />
+    </Key>
+    <Property Name="legajoOdontologo" Type="Int32" Nullable="false" />
+    <Property Name="idPaciente" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="hora" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idPrestacion" Type="Int32" Nullable="false" />
+    <Property Name="idEstado" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Ubicacion">
+    <Key>
+      <PropertyRef Name="idUbicacion" />
+    </Key>
+    <Property Name="idUbicacion" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="HistoriaClinicas" Relationship="Self.FK_HistoriaClinica_Ubicacion" FromRole="Ubicacion" ToRole="HistoriaClinica" />
+  </EntityType>
+  <Association Name="FK_DetalleFactura_Facturas">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
+    <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="nroFactura" />
+      </Principal>
+      <Dependent Role="DetalleFactura">
+        <PropertyRef Name="nroFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleFactura_Prestaciones">
+    <End Role="Prestaciones" Type="Self.Prestacione" Multiplicity="1" />
+    <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Prestaciones">
+        <PropertyRef Name="idPrestacion" />
+      </Principal>
+      <Dependent Role="DetalleFactura">
+        <PropertyRef Name="idPrestacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_EnfermedadesPorPaciente_dbo_Enfermedades">
+    <End Role="Enfermedades" Type="Self.Enfermedade" Multiplicity="1" />
+    <End Role="EnfermedadesXPaciente" Type="Self.EnfermedadesXPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enfermedades">
+        <PropertyRef Name="idEnfermedades" />
+      </Principal>
+      <Dependent Role="EnfermedadesXPaciente">
+        <PropertyRef Name="idEnfermedad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_EnfermedadesPorPaciente_dbo_Pacientes">
+    <End Role="Pacientes" Type="Self.Paciente" Multiplicity="1" />
+    <End Role="EnfermedadesXPaciente" Type="Self.EnfermedadesXPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pacientes">
+        <PropertyRef Name="dniPaciente" />
+      </Principal>
+      <Dependent Role="EnfermedadesXPaciente">
+        <PropertyRef Name="dniPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedicosXEspecialidad_Especialidades">
+    <End Role="Especialidad" Type="Self.Especialidad" Multiplicity="1" />
+    <End Role="MedicosXEspecialidad" Type="Self.MedicosXEspecialidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especialidad">
+        <PropertyRef Name="idEspecialidad" />
+      </Principal>
+      <Dependent Role="MedicosXEspecialidad">
+        <PropertyRef Name="idEspecialidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Factura_Odontologo">
+    <End Role="Odontologos" Type="Self.Odontologo" Multiplicity="0..1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Odontologos">
+        <PropertyRef Name="legajo" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="legajoOdontologo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Factura_Paciente">
+    <End Role="Pacientes" Type="Self.Paciente" Multiplicity="0..1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pacientes">
+        <PropertyRef Name="dniPaciente" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="dniPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Factura_PrestacionesXPlan">
+    <End Role="Planes" Type="Self.Plane" Multiplicity="0..1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Planes">
+        <PropertyRef Name="idPlan" />
+        <PropertyRef Name="idObraSocial" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="idPlan" />
+        <PropertyRef Name="idObraSocial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_HistoriaClinica_dbo_Paciente">
+    <End Role="Pacientes" Type="Self.Paciente" Multiplicity="1" />
+    <End Role="HistoriaClinica" Type="Self.HistoriaClinica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pacientes">
+        <PropertyRef Name="dniPaciente" />
+      </Principal>
+      <Dependent Role="HistoriaClinica">
+        <PropertyRef Name="dniPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_HistoriaClinica_dbo_Prestaciones">
+    <End Role="Prestaciones" Type="Self.Prestacione" Multiplicity="1" />
+    <End Role="HistoriaClinica" Type="Self.HistoriaClinica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Prestaciones">
+        <PropertyRef Name="idPrestacion" />
+      </Principal>
+      <Dependent Role="HistoriaClinica">
+        <PropertyRef Name="idPrestacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HistoriaClinica_TipoDiente">
+    <End Role="TipoDiente" Type="Self.TipoDiente" Multiplicity="0..1" />
+    <End Role="HistoriaClinica" Type="Self.HistoriaClinica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDiente">
+        <PropertyRef Name="idTipo" />
+      </Principal>
+      <Dependent Role="HistoriaClinica">
+        <PropertyRef Name="idTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HistoriaClinica_Ubicacion">
+    <End Role="Ubicacion" Type="Self.Ubicacion" Multiplicity="0..1" />
+    <End Role="HistoriaClinica" Type="Self.HistoriaClinica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ubicacion">
+        <PropertyRef Name="idUbicacion" />
+      </Principal>
+      <Dependent Role="HistoriaClinica">
+        <PropertyRef Name="idUbicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PlanesPorObraSocial">
+    <End Role="ObraSocial" Type="Self.ObraSocial" Multiplicity="1" />
+    <End Role="Planes" Type="Self.Plane" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ObraSocial">
+        <PropertyRef Name="idOS" />
+      </Principal>
+      <Dependent Role="Planes">
+        <PropertyRef Name="idObraSocial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pacientes_ObraSocialXPaciente">
+    <End Role="Pacientes" Type="Self.Paciente" Multiplicity="1" />
+    <End Role="ObraSocialXPaciente" Type="Self.ObraSocialXPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pacientes">
+        <PropertyRef Name="dniPaciente" />
+      </Principal>
+      <Dependent Role="ObraSocialXPaciente">
+        <PropertyRef Name="dniPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ObraSocialPorPaciente_ObraSocial">
+    <End Role="Planes" Type="Self.Plane" Multiplicity="1" />
+    <End Role="ObraSocialXPaciente" Type="Self.ObraSocialXPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Planes">
+        <PropertyRef Name="idPlan" />
+        <PropertyRef Name="idObraSocial" />
+      </Principal>
+      <Dependent Role="ObraSocialXPaciente">
+        <PropertyRef Name="idPlan" />
+        <PropertyRef Name="idObraSocial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Receta_Odontologos">
+    <End Role="Odontologos" Type="Self.Odontologo" Multiplicity="1" />
+    <End Role="Receta" Type="Self.Receta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Odontologos">
+        <PropertyRef Name="legajo" />
+      </Principal>
+      <Dependent Role="Receta">
+        <PropertyRef Name="legajoOdontologo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Receta_Pacientes">
+    <End Role="Pacientes" Type="Self.Paciente" Multiplicity="1" />
+    <End Role="Receta" Type="Self.Receta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pacientes">
+        <PropertyRef Name="dniPaciente" />
+      </Principal>
+      <Dependent Role="Receta">
+        <PropertyRef Name="dniPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PrestacionesXPlan">
+    <End Role="Planes" Type="Self.Plane" Multiplicity="1" />
+    <End Role="PrestacionesPorPlan" Type="Self.PrestacionesPorPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Planes">
+        <PropertyRef Name="idPlan" />
+        <PropertyRef Name="idObraSocial" />
+      </Principal>
+      <Dependent Role="PrestacionesPorPlan">
+        <PropertyRef Name="idPlan" />
+        <PropertyRef Name="idObraSocial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="consultorioEntity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alergias" EntityType="Self.Alergia" />
+    <EntitySet Name="DetalleFacturas" EntityType="Self.DetalleFactura" />
+    <EntitySet Name="Enfermedades" EntityType="Self.Enfermedade" />
+    <EntitySet Name="EnfermedadesXPacientes" EntityType="Self.EnfermedadesXPaciente" />
+    <EntitySet Name="Especialidads" EntityType="Self.Especialidad" />
+    <EntitySet Name="EstadoTurnos" EntityType="Self.EstadoTurno" />
+    <EntitySet Name="Facturas" EntityType="Self.Factura" />
+    <EntitySet Name="HistoriaClinicas" EntityType="Self.HistoriaClinica" />
+    <EntitySet Name="Medicamentos" EntityType="Self.Medicamento" />
+    <EntitySet Name="MedicosXEspecialidads" EntityType="Self.MedicosXEspecialidad" />
+    <EntitySet Name="ObraSocials" EntityType="Self.ObraSocial" />
+    <EntitySet Name="ObraSocialXPacientes" EntityType="Self.ObraSocialXPaciente" />
+    <EntitySet Name="Odontologos" EntityType="Self.Odontologo" />
+    <EntitySet Name="Pacientes" EntityType="Self.Paciente" />
+    <EntitySet Name="Planes" EntityType="Self.Plane" />
+    <EntitySet Name="Prestaciones" EntityType="Self.Prestacione" />
+    <EntitySet Name="PrestacionesPorPlans" EntityType="Self.PrestacionesPorPlan" />
+    <EntitySet Name="Recetas" EntityType="Self.Receta" />
+    <EntitySet Name="TipoDientes" EntityType="Self.TipoDiente" />
+    <EntitySet Name="Turnoes" EntityType="Self.Turno" />
+    <EntitySet Name="Ubicacions" EntityType="Self.Ubicacion" />
+    <AssociationSet Name="FK_DetalleFactura_Facturas" Association="Self.FK_DetalleFactura_Facturas">
+      <End Role="Factura" EntitySet="Facturas" />
+      <End Role="DetalleFactura" EntitySet="DetalleFacturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleFactura_Prestaciones" Association="Self.FK_DetalleFactura_Prestaciones">
+      <End Role="Prestaciones" EntitySet="Prestaciones" />
+      <End Role="DetalleFactura" EntitySet="DetalleFacturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_EnfermedadesPorPaciente_dbo_Enfermedades" Association="Self.FK_dbo_EnfermedadesPorPaciente_dbo_Enfermedades">
+      <End Role="Enfermedades" EntitySet="Enfermedades" />
+      <End Role="EnfermedadesXPaciente" EntitySet="EnfermedadesXPacientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_EnfermedadesPorPaciente_dbo_Pacientes" Association="Self.FK_dbo_EnfermedadesPorPaciente_dbo_Pacientes">
+      <End Role="Pacientes" EntitySet="Pacientes" />
+      <End Role="EnfermedadesXPaciente" EntitySet="EnfermedadesXPacientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedicosXEspecialidad_Especialidades" Association="Self.FK_MedicosXEspecialidad_Especialidades">
+      <End Role="Especialidad" EntitySet="Especialidads" />
+      <End Role="MedicosXEspecialidad" EntitySet="MedicosXEspecialidads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_Odontologo" Association="Self.FK_Factura_Odontologo">
+      <End Role="Odontologos" EntitySet="Odontologos" />
+      <End Role="Factura" EntitySet="Facturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_Paciente" Association="Self.FK_Factura_Paciente">
+      <End Role="Pacientes" EntitySet="Pacientes" />
+      <End Role="Factura" EntitySet="Facturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_PrestacionesXPlan" Association="Self.FK_Factura_PrestacionesXPlan">
+      <End Role="Planes" EntitySet="Planes" />
+      <End Role="Factura" EntitySet="Facturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_HistoriaClinica_dbo_Paciente" Association="Self.FK_dbo_HistoriaClinica_dbo_Paciente">
+      <End Role="Pacientes" EntitySet="Pacientes" />
+      <End Role="HistoriaClinica" EntitySet="HistoriaClinicas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_HistoriaClinica_dbo_Prestaciones" Association="Self.FK_dbo_HistoriaClinica_dbo_Prestaciones">
+      <End Role="Prestaciones" EntitySet="Prestaciones" />
+      <End Role="HistoriaClinica" EntitySet="HistoriaClinicas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoriaClinica_TipoDiente" Association="Self.FK_HistoriaClinica_TipoDiente">
+      <End Role="TipoDiente" EntitySet="TipoDientes" />
+      <End Role="HistoriaClinica" EntitySet="HistoriaClinicas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoriaClinica_Ubicacion" Association="Self.FK_HistoriaClinica_Ubicacion">
+      <End Role="Ubicacion" EntitySet="Ubicacions" />
+      <End Role="HistoriaClinica" EntitySet="HistoriaClinicas" />
+    </AssociationSet>
+    <AssociationSet Name="PlanesPorObraSocial" Association="Self.PlanesPorObraSocial">
+      <End Role="ObraSocial" EntitySet="ObraSocials" />
+      <End Role="Planes" EntitySet="Planes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pacientes_ObraSocialXPaciente" Association="Self.FK_Pacientes_ObraSocialXPaciente">
+      <End Role="Pacientes" EntitySet="Pacientes" />
+      <End Role="ObraSocialXPaciente" EntitySet="ObraSocialXPacientes" />
+    </AssociationSet>
+    <AssociationSet Name="ObraSocialPorPaciente_ObraSocial" Association="Self.ObraSocialPorPaciente_ObraSocial">
+      <End Role="Planes" EntitySet="Planes" />
+      <End Role="ObraSocialXPaciente" EntitySet="ObraSocialXPacientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Receta_Odontologos" Association="Self.FK_Receta_Odontologos">
+      <End Role="Odontologos" EntitySet="Odontologos" />
+      <End Role="Receta" EntitySet="Recetas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Receta_Pacientes" Association="Self.FK_Receta_Pacientes">
+      <End Role="Pacientes" EntitySet="Pacientes" />
+      <End Role="Receta" EntitySet="Recetas" />
+    </AssociationSet>
+    <AssociationSet Name="PrestacionesXPlan" Association="Self.PrestacionesXPlan">
+      <End Role="Planes" EntitySet="Planes" />
+      <End Role="PrestacionesPorPlan" EntitySet="PrestacionesPorPlans" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

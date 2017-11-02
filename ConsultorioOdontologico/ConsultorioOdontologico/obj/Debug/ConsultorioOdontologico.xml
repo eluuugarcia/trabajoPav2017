@@ -6,7 +6,215 @@ ConsultorioOdontologico
 </name>
 </assembly>
 <members>
-<member name="P:ConsultorioOdontologico.My.Resources.Resources.ResourceManager">
+<member name="T:ConsultorioOdontologico.DataSetPrestaciones.PrestacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestaciones.PrestacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestaciones.PrestacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestaciones">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.PrestacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetPrestaciones,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetPrestaciones,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetPrestaciones,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetPrestaciones)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades.EnfermedadesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades.EnfermedadesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades.EnfermedadesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.EnfermedadesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetEnfermedades,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetEnfermedades,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetEnfermedades,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetEnfermedades)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPacientes.PacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPacientes.PacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPacientes.PacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPacientes">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPacientesTableAdapters.PacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPacientesTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetPacientes,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPacientesTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetPacientes,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPacientesTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetPacientes,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPacientesTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPacientesTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetPacientes)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPacientesTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPacientesTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPacientesTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologos.OdontologosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologos.OdontologosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologos.OdontologosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologos">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosTableAdapters.OdontologosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetOdontologos,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetOdontologos,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetOdontologos,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetOdontologos)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:ConsultorioOdontologico.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -14,6 +222,10 @@ ConsultorioOdontologico
 	<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:ConsultorioOdontologico.My.Resources.Resources._300">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="T:ConsultorioOdontologico.My.Resources.Resources">
 	<summary>
