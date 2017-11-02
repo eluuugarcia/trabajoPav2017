@@ -107,6 +107,7 @@ Partial Class frmMenu
         Me.Controls.Add(Me.cmdPacientes)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.ImeMode = System.Windows.Forms.ImeMode.KatakanaHalf
         Me.Name = "frmMenu"
         Me.Text = "Consultorio Odontologico SC"
         Me.ResumeLayout(False)

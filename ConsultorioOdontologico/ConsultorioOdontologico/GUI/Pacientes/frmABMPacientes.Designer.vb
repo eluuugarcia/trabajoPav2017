@@ -40,17 +40,13 @@ Partial Class frmABMPacientes
         Me.cmbPlan = New System.Windows.Forms.ComboBox()
         Me.txtNroAfiliado = New System.Windows.Forms.TextBox()
         Me.grbPacientes = New System.Windows.Forms.GroupBox()
+        Me.Nuevo = New System.Windows.Forms.Button()
         Me.mtxtTelCont = New System.Windows.Forms.MaskedTextBox()
         Me.mtxtDNI = New System.Windows.Forms.MaskedTextBox()
         Me.lblMensaje = New System.Windows.Forms.Label()
-        Me.grbOS = New System.Windows.Forms.GroupBox()
         Me.cmdConsultar = New System.Windows.Forms.Button()
+        Me.grbOS = New System.Windows.Forms.GroupBox()
         Me.dgvPacientes = New System.Windows.Forms.DataGridView()
-        Me.cmdAgregar = New System.Windows.Forms.Button()
-        Me.cmdModificar = New System.Windows.Forms.Button()
-        Me.cmdEliminar = New System.Windows.Forms.Button()
-        Me.cmdSalir = New System.Windows.Forms.Button()
-        Me.cmdBorrarCampos = New System.Windows.Forms.Button()
         Me.DNI = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -62,6 +58,10 @@ Partial Class frmABMPacientes
         Me.NroAfiliado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.idPlan = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.idOS = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cmdAgregar = New System.Windows.Forms.Button()
+        Me.cmdModificar = New System.Windows.Forms.Button()
+        Me.cmdEliminar = New System.Windows.Forms.Button()
+        Me.cmdBorrarCampos = New System.Windows.Forms.Button()
         Me.grbPacientes.SuspendLayout()
         Me.grbOS.SuspendLayout()
         CType(Me.dgvPacientes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -150,6 +150,7 @@ Partial Class frmABMPacientes
         '
         'txtApellido
         '
+        Me.txtApellido.Enabled = False
         Me.txtApellido.Location = New System.Drawing.Point(156, 54)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(100, 20)
@@ -157,6 +158,7 @@ Partial Class frmABMPacientes
         '
         'txtNombre
         '
+        Me.txtNombre.Enabled = False
         Me.txtNombre.Location = New System.Drawing.Point(485, 54)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(100, 20)
@@ -166,6 +168,7 @@ Partial Class frmABMPacientes
         '
         Me.cmbSexo.DisplayMember = "1"
         Me.cmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbSexo.Enabled = False
         Me.cmbSexo.FormattingEnabled = True
         Me.cmbSexo.Items.AddRange(New Object() {"Masculino", "Femenino"})
         Me.cmbSexo.Location = New System.Drawing.Point(156, 80)
@@ -176,6 +179,7 @@ Partial Class frmABMPacientes
         '
         'mtxtDOB
         '
+        Me.mtxtDOB.Enabled = False
         Me.mtxtDOB.Location = New System.Drawing.Point(485, 81)
         Me.mtxtDOB.Mask = "00/00/0000"
         Me.mtxtDOB.Name = "mtxtDOB"
@@ -187,6 +191,7 @@ Partial Class frmABMPacientes
         'cmbOS
         '
         Me.cmbOS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbOS.Enabled = False
         Me.cmbOS.FormattingEnabled = True
         Me.cmbOS.Location = New System.Drawing.Point(147, 26)
         Me.cmbOS.Name = "cmbOS"
@@ -196,6 +201,7 @@ Partial Class frmABMPacientes
         'cmbPlan
         '
         Me.cmbPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbPlan.Enabled = False
         Me.cmbPlan.FormattingEnabled = True
         Me.cmbPlan.Location = New System.Drawing.Point(406, 26)
         Me.cmbPlan.Name = "cmbPlan"
@@ -204,6 +210,7 @@ Partial Class frmABMPacientes
         '
         'txtNroAfiliado
         '
+        Me.txtNroAfiliado.Enabled = False
         Me.txtNroAfiliado.Location = New System.Drawing.Point(147, 65)
         Me.txtNroAfiliado.Name = "txtNroAfiliado"
         Me.txtNroAfiliado.Size = New System.Drawing.Size(100, 20)
@@ -211,10 +218,12 @@ Partial Class frmABMPacientes
         '
         'grbPacientes
         '
+        Me.grbPacientes.Controls.Add(Me.Nuevo)
         Me.grbPacientes.Controls.Add(Me.mtxtTelCont)
         Me.grbPacientes.Controls.Add(Me.mtxtDNI)
         Me.grbPacientes.Controls.Add(Me.lblMensaje)
         Me.grbPacientes.Controls.Add(Me.lblDNI)
+        Me.grbPacientes.Controls.Add(Me.cmdConsultar)
         Me.grbPacientes.Controls.Add(Me.lblApellido)
         Me.grbPacientes.Controls.Add(Me.lblSexo)
         Me.grbPacientes.Controls.Add(Me.mtxtDOB)
@@ -231,8 +240,19 @@ Partial Class frmABMPacientes
         Me.grbPacientes.TabStop = False
         Me.grbPacientes.Text = "Datos del paciente"
         '
+        'Nuevo
+        '
+        Me.Nuevo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.Nuevo.Location = New System.Drawing.Point(485, 22)
+        Me.Nuevo.Name = "Nuevo"
+        Me.Nuevo.Size = New System.Drawing.Size(72, 24)
+        Me.Nuevo.TabIndex = 27
+        Me.Nuevo.Text = "Nuevo"
+        Me.Nuevo.UseVisualStyleBackColor = True
+        '
         'mtxtTelCont
         '
+        Me.mtxtTelCont.Enabled = False
         Me.mtxtTelCont.Location = New System.Drawing.Point(156, 110)
         Me.mtxtTelCont.Name = "mtxtTelCont"
         Me.mtxtTelCont.PromptChar = Global.Microsoft.VisualBasic.ChrW(32)
@@ -255,6 +275,16 @@ Partial Class frmABMPacientes
         Me.lblMensaje.Size = New System.Drawing.Size(0, 13)
         Me.lblMensaje.TabIndex = 15
         '
+        'cmdConsultar
+        '
+        Me.cmdConsultar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.cmdConsultar.Location = New System.Drawing.Point(341, 23)
+        Me.cmdConsultar.Name = "cmdConsultar"
+        Me.cmdConsultar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdConsultar.TabIndex = 20
+        Me.cmdConsultar.Text = "Consultar"
+        Me.cmdConsultar.UseVisualStyleBackColor = True
+        '
         'grbOS
         '
         Me.grbOS.Controls.Add(Me.lblPlan)
@@ -270,18 +300,10 @@ Partial Class frmABMPacientes
         Me.grbOS.TabStop = False
         Me.grbOS.Text = "Datos de Obra Social"
         '
-        'cmdConsultar
-        '
-        Me.cmdConsultar.Location = New System.Drawing.Point(547, 268)
-        Me.cmdConsultar.Name = "cmdConsultar"
-        Me.cmdConsultar.Size = New System.Drawing.Size(75, 23)
-        Me.cmdConsultar.TabIndex = 20
-        Me.cmdConsultar.Text = "Consultar"
-        Me.cmdConsultar.UseVisualStyleBackColor = True
-        '
         'dgvPacientes
         '
         Me.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
+        Me.dgvPacientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.dgvPacientes.ColumnHeadersHeight = 20
         Me.dgvPacientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DNI, Me.Apellido, Me.Nombre, Me.Sexo, Me.DOB, Me.TelCont, Me.OS, Me.Plan, Me.NroAfiliado, Me.idPlan, Me.idOS})
         Me.dgvPacientes.Location = New System.Drawing.Point(12, 297)
@@ -290,51 +312,6 @@ Partial Class frmABMPacientes
         Me.dgvPacientes.RowHeadersWidth = 10
         Me.dgvPacientes.Size = New System.Drawing.Size(610, 150)
         Me.dgvPacientes.TabIndex = 21
-        '
-        'cmdAgregar
-        '
-        Me.cmdAgregar.Location = New System.Drawing.Point(12, 470)
-        Me.cmdAgregar.Name = "cmdAgregar"
-        Me.cmdAgregar.Size = New System.Drawing.Size(75, 23)
-        Me.cmdAgregar.TabIndex = 22
-        Me.cmdAgregar.Text = "Agregar"
-        Me.cmdAgregar.UseVisualStyleBackColor = True
-        '
-        'cmdModificar
-        '
-        Me.cmdModificar.Location = New System.Drawing.Point(114, 470)
-        Me.cmdModificar.Name = "cmdModificar"
-        Me.cmdModificar.Size = New System.Drawing.Size(75, 23)
-        Me.cmdModificar.TabIndex = 23
-        Me.cmdModificar.Text = "Mofidicar"
-        Me.cmdModificar.UseVisualStyleBackColor = True
-        '
-        'cmdEliminar
-        '
-        Me.cmdEliminar.Location = New System.Drawing.Point(216, 470)
-        Me.cmdEliminar.Name = "cmdEliminar"
-        Me.cmdEliminar.Size = New System.Drawing.Size(75, 23)
-        Me.cmdEliminar.TabIndex = 24
-        Me.cmdEliminar.Text = "Eliminar"
-        Me.cmdEliminar.UseVisualStyleBackColor = True
-        '
-        'cmdSalir
-        '
-        Me.cmdSalir.Location = New System.Drawing.Point(547, 470)
-        Me.cmdSalir.Name = "cmdSalir"
-        Me.cmdSalir.Size = New System.Drawing.Size(75, 23)
-        Me.cmdSalir.TabIndex = 25
-        Me.cmdSalir.Text = "Salir"
-        Me.cmdSalir.UseVisualStyleBackColor = True
-        '
-        'cmdBorrarCampos
-        '
-        Me.cmdBorrarCampos.Location = New System.Drawing.Point(319, 470)
-        Me.cmdBorrarCampos.Name = "cmdBorrarCampos"
-        Me.cmdBorrarCampos.Size = New System.Drawing.Size(91, 23)
-        Me.cmdBorrarCampos.TabIndex = 26
-        Me.cmdBorrarCampos.Text = "Borrar campos"
-        Me.cmdBorrarCampos.UseVisualStyleBackColor = True
         '
         'DNI
         '
@@ -420,23 +397,63 @@ Partial Class frmABMPacientes
         Me.idOS.Visible = False
         Me.idOS.Width = 55
         '
+        'cmdAgregar
+        '
+        Me.cmdAgregar.Enabled = False
+        Me.cmdAgregar.Location = New System.Drawing.Point(12, 470)
+        Me.cmdAgregar.Name = "cmdAgregar"
+        Me.cmdAgregar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdAgregar.TabIndex = 22
+        Me.cmdAgregar.Text = "Agregar"
+        Me.cmdAgregar.UseVisualStyleBackColor = True
+        '
+        'cmdModificar
+        '
+        Me.cmdModificar.Enabled = False
+        Me.cmdModificar.Location = New System.Drawing.Point(114, 470)
+        Me.cmdModificar.Name = "cmdModificar"
+        Me.cmdModificar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdModificar.TabIndex = 23
+        Me.cmdModificar.Text = "Mofidicar"
+        Me.cmdModificar.UseVisualStyleBackColor = True
+        '
+        'cmdEliminar
+        '
+        Me.cmdEliminar.Enabled = False
+        Me.cmdEliminar.Location = New System.Drawing.Point(216, 470)
+        Me.cmdEliminar.Name = "cmdEliminar"
+        Me.cmdEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdEliminar.TabIndex = 24
+        Me.cmdEliminar.Text = "Eliminar"
+        Me.cmdEliminar.UseVisualStyleBackColor = True
+        '
+        'cmdBorrarCampos
+        '
+        Me.cmdBorrarCampos.Location = New System.Drawing.Point(319, 470)
+        Me.cmdBorrarCampos.Name = "cmdBorrarCampos"
+        Me.cmdBorrarCampos.Size = New System.Drawing.Size(91, 23)
+        Me.cmdBorrarCampos.TabIndex = 26
+        Me.cmdBorrarCampos.Text = "Borrar campos"
+        Me.cmdBorrarCampos.UseVisualStyleBackColor = True
+        '
         'frmABMPacientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(634, 519)
         Me.Controls.Add(Me.cmdBorrarCampos)
-        Me.Controls.Add(Me.cmdSalir)
         Me.Controls.Add(Me.cmdEliminar)
         Me.Controls.Add(Me.cmdModificar)
         Me.Controls.Add(Me.cmdAgregar)
         Me.Controls.Add(Me.dgvPacientes)
-        Me.Controls.Add(Me.cmdConsultar)
         Me.Controls.Add(Me.grbPacientes)
         Me.Controls.Add(Me.grbOS)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmABMPacientes"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pacientes"
         Me.grbPacientes.ResumeLayout(False)
         Me.grbPacientes.PerformLayout()
@@ -469,7 +486,6 @@ Partial Class frmABMPacientes
     Friend WithEvents cmdAgregar As System.Windows.Forms.Button
     Friend WithEvents cmdModificar As System.Windows.Forms.Button
     Friend WithEvents cmdEliminar As System.Windows.Forms.Button
-    Friend WithEvents cmdSalir As System.Windows.Forms.Button
     Friend WithEvents lblMensaje As System.Windows.Forms.Label
     Friend WithEvents mtxtDNI As System.Windows.Forms.MaskedTextBox
     Friend WithEvents cmdBorrarCampos As System.Windows.Forms.Button
@@ -485,5 +501,6 @@ Partial Class frmABMPacientes
     Friend WithEvents NroAfiliado As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents idPlan As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents idOS As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Nuevo As System.Windows.Forms.Button
 
 End Class

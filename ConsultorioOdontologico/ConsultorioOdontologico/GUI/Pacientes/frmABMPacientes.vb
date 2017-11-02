@@ -3,7 +3,6 @@
 
     Private Sub frmABMPacientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CargarCombo(cmbOS, BDHelper2.GetObraSocial(), "idOS", "nombre")
-
         llenarGrid(BDHelper2.GetPacientes())
     End Sub
 
@@ -29,22 +28,25 @@
 
     Private Sub cmdConsultar_Click(sender As Object, e As EventArgs) Handles cmdConsultar.Click
 
-        Dim paciente = BDHelper2.GetPaciente(mtxtDNI.Text)
-        Dim P As New Paciente
-        For Each fila As DataRow In paciente.Rows
-            P.Apellido = fila.Item("Apellido")
-        Next
-        If (P.Apellido IsNot Nothing) Then
-            llenarGrid(paciente)
-            cmdConsultar.Enabled = True
-        Else
-            cmdConsultar.Enabled = False
-            MsgBox("Ese paciente no existe")
+        Dim param As New List(Of Object)
+        param.Add(mtxtDNI.Text)
+        If BDHelper2.validarDatos(param.ToArray()) = True Then
+            Dim P As New Paciente
+            Dim paciente = BDHelper2.GetPaciente(mtxtDNI.Text)
+
+            For Each fila As DataRow In paciente.Rows
+                P.Apellidos = fila.Item("Apellido")
+            Next
+            If (P.Apellidos IsNot Nothing) Then
+                llenarGrid(paciente)
+            Else
+                MsgBox("Ese paciente no existe")
+            End If
         End If
 
     End Sub
 
-    Private Sub cmdSalir_Click(sender As Object, e As EventArgs) Handles cmdSalir.Click
+    Private Sub cmdSalir_Click(sender As Object, e As EventArgs)
         'Confirmación de salida.
         If MessageBox.Show("Seguro que desea salir?", _
                 "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question _
@@ -58,36 +60,40 @@
     Private Sub cmdAgregar_Click(sender As Object, e As EventArgs) Handles cmdAgregar.Click
 
         Dim param As New List(Of Object)
+        Dim index As New List(Of Object)
         param.Add(mtxtDNI.Text)
         param.Add(txtNombre.Text)
         param.Add(txtApellido.Text)
         param.Add(mtxtDOB.Text)
         param.Add(mtxtTelCont.Text)
-        param.Add(cmbOS.SelectedValue)
-        param.Add(cmbPlan.SelectedValue)
+        index.Add(cmbOS.SelectedValue)
+        index.Add(cmbPlan.SelectedValue)
         param.Add(txtNroAfiliado.Text)
 
 
         If BDHelper2.validarDatos(param.ToArray()) = True Then
-            If BDHelper2.validarFechaNac(CDate(mtxtDOB.Text)) = True Then
+            If BDHelper2.validarCombos(index.ToArray()) = True Then
+                If BDHelper2.validarFechaNac(CDate(mtxtDOB.Text)) = True Then
 
-                Dim str As String = "INSERT INTO Pacientes (dniPaciente, apellido,nombre,sexo,fechaNacimiento,telcontacto, activo) VALUES("
-                str += mtxtDNI.Text & ", '" & txtApellido.Text & "','" & txtNombre.Text & "','"
-                If cmbSexo.SelectedIndex = 1 Then
-                    str += "F',"
-                Else
-                    str += "M',"
+                    Dim str As String = "INSERT INTO Pacientes (dniPaciente, apellido,nombre,sexo,fechaNacimiento,telcontacto, activo) VALUES("
+                    str += mtxtDNI.Text & ", '" & txtApellido.Text & "','" & txtNombre.Text & "','"
+                    If cmbSexo.SelectedIndex = 1 Then
+                        str += "F',"
+                    Else
+                        str += "M',"
+                    End If
+                    str += "CONVERT(DATE,'" & mtxtDOB.Text & "', 103 ),'" & mtxtTelCont.Text & "', 'T')"
+
+                    str += "INSERT INTO ObraSocialXPaciente (idNroAfiliado,idPlan,idObraSocial,dniPaciente) VALUES("
+                    str += txtNroAfiliado.Text & "," & cmbPlan.SelectedValue & "," & cmbOS.SelectedValue & "," & mtxtDNI.Text & ")"
+
+                    BDHelper2.agregarPaciente(str)
+                    MsgBox("El paciente se ha dado de alta")
+
+                    llenarGrid(BDHelper2.GetPacientes())
+                    deshabilitarCampos()
+                    cmdAgregar.Enabled = False
                 End If
-                str += "CONVERT(DATE,'" & mtxtDOB.Text & "', 103 ),'" & mtxtTelCont.Text & "', 'T')"
-
-                str += "INSERT INTO ObraSocialXPaciente (idNroAfiliado,idPlan,idObraSocial,dniPaciente) VALUES("
-                str += txtNroAfiliado.Text & "," & cmbPlan.SelectedValue & "," & cmbOS.SelectedValue & "," & mtxtDNI.Text & ")"
-
-                BDHelper2.agregarPaciente(str)
-                MsgBox("El paciente se ha dado de alta")
-
-                llenarGrid(BDHelper2.GetPacientes())
-
             End If
         End If
 
@@ -122,10 +128,12 @@
                 End If
                 str += "fechaNacimiento = CONVERT(DATE,'" & mtxtDOB.Text & "', 103 ),telcontacto = '" & mtxtTelCont.Text & "' WHERE dniPaciente =" & mtxtDNI.Text
                 BDHelper2.modificarPaciente(str)
-                MsgBox(str)
+
                 llenarGrid(BDHelper2.GetPacientes())
                 MsgBox("La informacion del paciente ha sido actualizada")
-
+                deshabilitarCampos()
+                cmdEliminar.Enabled = False
+                cmdModificar.Enabled = False
             End If
         End If
 
@@ -156,6 +164,9 @@
     End Sub
 
     Private Sub dgvPacientes_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPacientes.CellClick
+        habilitarCampos()
+        cmdEliminar.Enabled = True
+        cmdModificar.Enabled = True
         mtxtDNI.Text = dgvPacientes.CurrentRow.Cells(0).Value
         txtApellido.Text = dgvPacientes.CurrentRow.Cells(1).Value
         txtNombre.Text = dgvPacientes.CurrentRow.Cells(2).Value
@@ -186,4 +197,39 @@
     End Sub
 
 
+
+    Private Sub cmbPlan_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmbPlan.SelectionChangeCommitted
+        If cmbOS.SelectedIndex = 0 And cmbPlan.SelectedIndex = 0 Then
+            txtNroAfiliado.Text = BDHelper2.GetPacientes().Rows.Count + 1
+            txtNroAfiliado.Enabled = False
+        End If
+    End Sub
+
+
+    Private Sub deshabilitarCampos()
+        txtApellido.Enabled = False
+        txtNombre.Enabled = False
+        txtNroAfiliado.Enabled = False
+        mtxtDOB.Enabled = False
+        mtxtTelCont.Enabled = False
+        cmbOS.Enabled = False
+        cmbPlan.Enabled = False
+        cmbSexo.Enabled = False
+    End Sub
+
+    Private Sub habilitarCampos()
+        txtApellido.Enabled = True
+        txtNombre.Enabled = True
+        txtNroAfiliado.Enabled = True
+        mtxtDOB.Enabled = True
+        mtxtTelCont.Enabled = True
+        cmbOS.Enabled = True
+        cmbPlan.Enabled = True
+        cmbSexo.Enabled = True
+    End Sub
+
+
+    Private Sub Nuevo_Click(sender As Object, e As EventArgs) Handles Nuevo.Click
+        habilitarCampos()
+    End Sub
 End Class
