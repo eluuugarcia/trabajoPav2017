@@ -122,80 +122,128 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alergia.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
     <Compile Include="Clases\Odontologo.vb" />
     <Compile Include="Clases\Turno.vb" />
+    <Compile Include="DataSetEsadisticasOSPrueba.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEsadisticasOSPrueba.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetEstadisticaOSStoredP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEstadisticaOSStoredP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetOdontologosPorTurno.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetOdontologosPorTurno.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetOdontologosPorTurnosMS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetOdontologosPorTurnosMS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetOdontologosSolicitados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetOdontologosSolicitados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetOdontologosSolicitados2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetOdontologosSolicitados2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetPrestaciones.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetPrestaciones.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Data\DataSetEnfermedades.Designer.vb">
+    <Compile Include="DataSetEnfermedades.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetEnfermedades.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Data\DataSetOdontologos.Designer.vb">
+    <Compile Include="DataSetOdontologos.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetOdontologos.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Data\DataSetPacientes.Designer.vb">
+    <Compile Include="DataSetPacientes.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetPacientes.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Data\DataSetPacientes.vb">
+    <Compile Include="DataSetPacientes.vb">
       <DependentUpon>DataSetPacientes.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DetalleFactura.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    <Compile Include="DataSetPrueba.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPrueba.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Enfermedade.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    <Compile Include="db_consultorio_odontologicoDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_consultorio_odontologicoDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="EnfermedadesXPaciente.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    <Compile Include="db_consultorio_odontologicoDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_consultorio_odontologicoDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Especialidad.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    <Compile Include="GUI\Facturación\frmFacturacion.Designer.vb">
+      <DependentUpon>frmFacturacion.vb</DependentUpon>
     </Compile>
-    <Compile Include="EstadoTurno.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    <Compile Include="GUI\Facturación\frmFacturacion.vb">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Factura.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
+    <Compile Include="GUI\Pacientes\frmAgregarMedicamentoInexistente.Designer.vb">
+      <DependentUpon>frmAgregarMedicamentoInexistente.vb</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Reportes\frmMenuReportes.Designer.vb">
+    <Compile Include="GUI\Pacientes\frmAgregarMedicamentoInexistente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes y Estadisticas\Estadisticas\frmEstadisticaOdontologosSolicitados.Designer.vb">
+      <DependentUpon>frmEstadisticaOdontologosSolicitados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes y Estadisticas\Estadisticas\frmEstadisticaOdontologosSolicitados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes y Estadisticas\Estadisticas\frmEstadisticaOS.Designer.vb">
+      <DependentUpon>frmEstadisticaOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes y Estadisticas\Estadisticas\frmEstadisticaOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes y Estadisticas\frmMenuReportes.Designer.vb">
       <DependentUpon>frmMenuReportes.vb</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Reportes\frmMenuReportes.vb">
+    <Compile Include="GUI\Reportes y Estadisticas\frmMenuReportes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Reportes\frmReporteEnfermedades.Designer.vb">
+    <Compile Include="GUI\Reportes y Estadisticas\frmReporteEnfermedades.Designer.vb">
       <DependentUpon>frmReporteEnfermedades.vb</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Reportes\frmReporteEnfermedades.vb">
+    <Compile Include="GUI\Reportes y Estadisticas\frmReporteEnfermedades.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Reportes\frmReporteOdontologos.Designer.vb">
+    <Compile Include="GUI\Reportes y Estadisticas\frmReporteOdontologos.Designer.vb">
       <DependentUpon>frmReporteOdontologos.vb</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Reportes\frmReporteOdontologos.vb">
+    <Compile Include="GUI\Reportes y Estadisticas\frmReporteOdontologos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Reportes\frmReportePacientesvb.Designer.vb">
+    <Compile Include="GUI\Reportes y Estadisticas\frmReportePacientesvb.Designer.vb">
       <DependentUpon>frmReportePacientesvb.vb</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Reportes\frmReportePacientesvb.vb">
+    <Compile Include="GUI\Reportes y Estadisticas\frmReportePacientesvb.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Reportes\frmReportePrestaciones.Designer.vb">
+    <Compile Include="GUI\Reportes y Estadisticas\frmReportePrestaciones.Designer.vb">
       <DependentUpon>frmReportePrestaciones.vb</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Reportes\frmReportePrestaciones.vb">
+    <Compile Include="GUI\Reportes y Estadisticas\frmReportePrestaciones.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Turnos\frmTurnos.Designer.vb">
@@ -278,12 +326,6 @@
     <Compile Include="GUI\Pacientes\frmAgregarEnfermedadInexistente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Pacientes\frmAgregarHC.Designer.vb">
-      <DependentUpon>frmAgregarHC.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Pacientes\frmAgregarHC.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="GUI\Pacientes\frmAgregarHCCompleta.Designer.vb">
       <DependentUpon>frmAgregarHCCompleta.vb</DependentUpon>
     </Compile>
@@ -309,30 +351,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Helper\BDHelper2.vb" />
-    <Compile Include="HistoriaClinica.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="mdlConsultorioModelo.Context.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>mdlConsultorioModelo.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="mdlConsultorioModelo.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>mdlConsultorioModelo.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="mdlConsultorioModelo.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Medicamento.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MedicosXEspecialidad.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -348,58 +366,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ObraSocial.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ObraSocialXPaciente.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Odontologo.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Paciente.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Plane.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Prestacione.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PrestacionesPorPlan.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Receta.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TipoDiente.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Turno.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Ubicacion.vb">
-      <DependentUpon>mdlConsultorioModelo.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GUI\Reportes\frmMenuReportes.resx">
+    <EmbeddedResource Include="GUI\Facturación\frmFacturacion.resx">
+      <DependentUpon>frmFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Pacientes\frmAgregarMedicamentoInexistente.resx">
+      <DependentUpon>frmAgregarMedicamentoInexistente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\Estadisticas\EstadisticaOdontologosSolicitados.rdlc" />
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\Estadisticas\frmEstadisticaOdontologosSolicitados.resx">
+      <DependentUpon>frmEstadisticaOdontologosSolicitados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\Estadisticas\frmEstadisticaOS.resx">
+      <DependentUpon>frmEstadisticaOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\Estadisticas\EstadisticaOS2.rdlc" />
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\frmMenuReportes.resx">
       <DependentUpon>frmMenuReportes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Reportes\frmReporteEnfermedades.resx">
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\frmReporteEnfermedades.resx">
       <DependentUpon>frmReporteEnfermedades.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Reportes\frmReporteOdontologos.resx">
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\frmReporteOdontologos.resx">
       <DependentUpon>frmReporteOdontologos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Reportes\frmReportePacientesvb.resx">
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\frmReportePacientesvb.resx">
       <DependentUpon>frmReportePacientesvb.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Reportes\frmReportePrestaciones.resx">
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\frmReportePrestaciones.resx">
       <DependentUpon>frmReportePrestaciones.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Reportes\Reportes\reportePrestaciones.rdlc" />
-    <EmbeddedResource Include="GUI\Reportes\Reportes\RreporteEnfermedades.rdlc" />
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\Reportes\reportePrestaciones.rdlc" />
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\Reportes\reporteEnfermedades.rdlc" />
     <EmbeddedResource Include="GUI\Turnos\frmTurnos.resx">
       <DependentUpon>frmTurnos.vb</DependentUpon>
     </EmbeddedResource>
@@ -439,9 +438,6 @@
     <EmbeddedResource Include="GUI\Pacientes\frmAgregarEnfermedadInexistente.resx">
       <DependentUpon>frmAgregarEnfermedadInexistente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Pacientes\frmAgregarHC.resx">
-      <DependentUpon>frmAgregarHC.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Pacientes\frmAgregarHCCompleta.resx">
       <DependentUpon>frmAgregarHCCompleta.vb</DependentUpon>
     </EmbeddedResource>
@@ -460,14 +456,76 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Reportes\Reportes\reporteOdontologos.rdlc" />
-    <EmbeddedResource Include="GUI\Reportes\Reportes\reportePacientes.rdlc" />
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\Reportes\reporteOdontologos.rdlc" />
+    <EmbeddedResource Include="GUI\Reportes y Estadisticas\Reportes\reportePacientes.rdlc" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="mdlConsultorioModelo.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>mdlConsultorioModelo.Designer.vb</LastGenOutput>
-    </EntityDeploy>
+    <None Include="DataSetEsadisticasOSPrueba.xsc">
+      <DependentUpon>DataSetEsadisticasOSPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEsadisticasOSPrueba.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEsadisticasOSPrueba.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetEsadisticasOSPrueba.xss">
+      <DependentUpon>DataSetEsadisticasOSPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEstadisticaOSStoredP.xsc">
+      <DependentUpon>DataSetEstadisticaOSStoredP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEstadisticaOSStoredP.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEstadisticaOSStoredP.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetEstadisticaOSStoredP.xss">
+      <DependentUpon>DataSetEstadisticaOSStoredP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetOdontologosPorTurno.xsc">
+      <DependentUpon>DataSetOdontologosPorTurno.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetOdontologosPorTurno.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetOdontologosPorTurno.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetOdontologosPorTurno.xss">
+      <DependentUpon>DataSetOdontologosPorTurno.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetOdontologosPorTurnosMS.xsc">
+      <DependentUpon>DataSetOdontologosPorTurnosMS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetOdontologosPorTurnosMS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetOdontologosPorTurnosMS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetOdontologosPorTurnosMS.xss">
+      <DependentUpon>DataSetOdontologosPorTurnosMS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetOdontologosSolicitados.xsc">
+      <DependentUpon>DataSetOdontologosSolicitados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetOdontologosSolicitados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetOdontologosSolicitados.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetOdontologosSolicitados.xss">
+      <DependentUpon>DataSetOdontologosSolicitados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetOdontologosSolicitados2.xsc">
+      <DependentUpon>DataSetOdontologosSolicitados2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetOdontologosSolicitados2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetOdontologosSolicitados2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetOdontologosSolicitados2.xss">
+      <DependentUpon>DataSetOdontologosSolicitados2.xsd</DependentUpon>
+    </None>
     <None Include="DataSetPrestaciones.xsc">
       <DependentUpon>DataSetPrestaciones.xsd</DependentUpon>
     </None>
@@ -479,52 +537,87 @@
     <None Include="DataSetPrestaciones.xss">
       <DependentUpon>DataSetPrestaciones.xsd</DependentUpon>
     </None>
-    <None Include="Data\DataSetEnfermedades.xsc">
+    <None Include="DataSetEnfermedades.xsc">
       <DependentUpon>DataSetEnfermedades.xsd</DependentUpon>
     </None>
-    <None Include="Data\DataSetEnfermedades.xsd">
+    <None Include="DataSetEnfermedades.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetEnfermedades.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Data\DataSetEnfermedades.xss">
+    <None Include="DataSetEnfermedades.xss">
       <DependentUpon>DataSetEnfermedades.xsd</DependentUpon>
     </None>
-    <None Include="Data\DataSetOdontologos.xsc">
+    <None Include="DataSetOdontologos.xsc">
       <DependentUpon>DataSetOdontologos.xsd</DependentUpon>
     </None>
-    <None Include="Data\DataSetOdontologos.xsd">
+    <None Include="DataSetOdontologos.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetOdontologos.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Data\DataSetOdontologos.xss">
+    <None Include="DataSetOdontologos.xss">
       <DependentUpon>DataSetOdontologos.xsd</DependentUpon>
     </None>
-    <None Include="Data\DataSetPacientes.xsc">
+    <None Include="DataSetPacientes.xsc">
       <DependentUpon>DataSetPacientes.xsd</DependentUpon>
     </None>
-    <None Include="Data\DataSetPacientes.xsd">
+    <None Include="DataSetPacientes.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetPacientes.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Data\DataSetPacientes.xss">
+    <None Include="DataSetPacientes.xss">
       <DependentUpon>DataSetPacientes.xsd</DependentUpon>
     </None>
-    <None Include="mdlConsultorioModelo.edmx.diagram">
-      <DependentUpon>mdlConsultorioModelo.edmx</DependentUpon>
+    <None Include="DataSetPrueba.xsc">
+      <DependentUpon>DataSetPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPrueba.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPrueba.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetPrueba.xss">
+      <DependentUpon>DataSetPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="db_consultorio_odontologicoDataSet.xsc">
+      <DependentUpon>db_consultorio_odontologicoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_consultorio_odontologicoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_consultorio_odontologicoDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_consultorio_odontologicoDataSet.xss">
+      <DependentUpon>db_consultorio_odontologicoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_consultorio_odontologicoDataSet1.xsc">
+      <DependentUpon>db_consultorio_odontologicoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_consultorio_odontologicoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_consultorio_odontologicoDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_consultorio_odontologicoDataSet1.xss">
+      <DependentUpon>db_consultorio_odontologicoDataSet1.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\ConsultorioOdontologico.DataSetEstadisticasOSTableAdapters.ObraSocialTableAdapter.datasource" />
+    <None Include="My Project\DataSources\ConsultorioOdontologico.DataSetEstadisticasOSTableAdapters.ObraSocialXPacienteTableAdapter.datasource" />
+    <None Include="My Project\DataSources\ConsultorioOdontologico.DataSetEstadisticasOSTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="My Project\DataSources\ConsultorioOdontologico.DataSetEstadisticasOSTableAdapters.TableAdapterManager.datasource" />
     <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.ObraSocialTableAdapter.datasource" />
     <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.ObraSocialXPacienteTableAdapter.datasource" />
     <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.PacientesTableAdapter.datasource" />
     <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.PlanesTableAdapter.datasource" />
     <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
     <None Include="My Project\DataSources\ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="My Project\DataSources\DataSetEsadisticasOSPrueba.datasource" />
+    <None Include="My Project\DataSources\DataSetPrueba.datasource" />
     <None Include="My Project\DataSources\db_consultorio_odontologicoDataSet.datasource" />
     <None Include="My Project\DataSources\db_consultorio_odontologicoDataSet2.datasource" />
     <None Include="My Project\DataSources\db_consultorio_odontologicoDataSet2.ObraSocialXPacienteDataTable.datasource" />
@@ -563,16 +656,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images.ico" />
-    <Content Include="mdlConsultorioModelo.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>mdlConsultorioModelo.edmx</DependentUpon>
-      <LastGenOutput>mdlConsultorioModelo.Context.vb</LastGenOutput>
-    </Content>
-    <Content Include="mdlConsultorioModelo.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>mdlConsultorioModelo.edmx</DependentUpon>
-      <LastGenOutput>mdlConsultorioModelo.vb</LastGenOutput>
-    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
