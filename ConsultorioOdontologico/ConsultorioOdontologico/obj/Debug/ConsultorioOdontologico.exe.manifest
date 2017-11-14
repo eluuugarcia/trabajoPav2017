@@ -68,14 +68,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ConsultorioOdontologico.exe" size="1160664">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ConsultorioOdontologico.exe" size="3750872">
       <assemblyIdentity name="ConsultorioOdontologico" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>NIPUztBjOiy30m0yC2WZZFplF2sGgdri/Z8+GZPdrSI=</dsig:DigestValue>
+        <dsig:DigestValue>Vs5v9bw7T2fss7dvA2HOE3TyacH69spH/ELK4tAJebQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -119,24 +119,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>NqXCq+2rsE9w/FvUJbAnB5ooNtcemp9EcsIhddSeos8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="mdlConsultorioModelo.Context.tt" size="26796">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>5cN/OPBA+02QmFGLqEIm7ZJhDc8LlrHNbJCmcSAn3Sw=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="mdlConsultorioModelo.tt" size="26940">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>PVLpa8vCQ58lfUfElvZiRCHWKvi+PkAJ0lLQpu7J8sU=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

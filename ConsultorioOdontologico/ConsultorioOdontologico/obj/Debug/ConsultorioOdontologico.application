@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ConsultorioOdontologico.exe.manifest" size="7787">
+    <dependentAssembly dependencyType="install" codebase="ConsultorioOdontologico.exe.manifest" size="6975">
       <assemblyIdentity name="ConsultorioOdontologico.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RbYP6z5RJniNgzueCjXVTEQ/IMPNEtQ5L+0gVEPcEFI=</dsig:DigestValue>
+        <dsig:DigestValue>iOOyDw+JuXGHQD/y6ygGzXmaXioym3XLRWSaktpW8nM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

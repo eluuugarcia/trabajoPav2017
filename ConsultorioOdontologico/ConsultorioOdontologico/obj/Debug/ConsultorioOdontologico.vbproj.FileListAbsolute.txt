@@ -116,7 +116,6 @@ C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontolog
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmObraSocial.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEnfermedadAPaciente.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarEnfermedadInexistente.resources
-C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarHC.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarHCCompleta.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregrAlergiaAPaciente.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmHistoriaClinicavb.resources
@@ -142,3 +141,7 @@ C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontolog
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmReporteOdontologos.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmReporteEnfermedades.resources
 C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmReportePrestaciones.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmEstadisticaOS.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmEstadisticaOdontologosSolicitados.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmFacturacion.resources
+C:\Users\Elu\Desktop\UTN\PAV\TP PAV\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\ConsultorioOdontologico.frmAgregarMedicamentoInexistente.resources

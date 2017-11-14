@@ -6,107 +6,1719 @@ ConsultorioOdontologico
 </name>
 </assembly>
 <members>
-<member name="T:ConsultorioOdontologico.DataSetPrestaciones.PrestacionesDataTable">
+<member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.ObraSocialDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetPrestaciones.PrestacionesRow">
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.ObraSocialXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.PacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.PlanesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.ObraSocialRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetPrestaciones.PrestacionesRowChangeEvent">
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.ObraSocialXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.PacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.PlanesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.ObraSocialRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetPrestaciones">
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.ObraSocialXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.PacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba.PlanesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPrueba">
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.PrestacionesTableAdapter">
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.ObraSocialTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetPrestaciones,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.ObraSocialXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.PacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.PlanesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetEsadisticasOSPrueba,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Update rows in top-down order.
 </summary>
-</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetPrestaciones,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetEsadisticasOSPrueba,System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Insert rows in top-down order.
 </summary>
-</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetPrestaciones,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetEsadisticasOSPrueba,System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Delete rows in bottom-up order.
 </summary>
-</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
 </summary>
-</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetPrestaciones)">
+</member><member name="M:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetEsadisticasOSPrueba)">
 	<summary>
 Update all changes to the dataset.
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateOrderOption">
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.TableAdapterManager.UpdateOrderOption">
 	<summary>
 Update Order Option
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.SelfReferenceComparer">
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.TableAdapterManager.SelfReferenceComparer">
 	<summary>
 Used to sort self-referenced table's rows
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager">
+</member><member name="T:ConsultorioOdontologico.DataSetEsadisticasOSPruebaTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades.EnfermedadesDataTable">
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.AlergiasDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades.EnfermedadesRow">
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.AlergiasXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.DetalleFacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EnfermedadesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EnfermedadesXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EstadoTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.FacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.HistoriaClinicaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.MedicamentosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.MedicosXEspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.ObraSocialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.ObraSocialXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.OdontologosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PlanesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PrestacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PrestacionesPorPlanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.RecetaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.TipoDienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.TurnoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.UbicacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.odontologosPorTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.AlergiasRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades.EnfermedadesRowChangeEvent">
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.AlergiasXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.DetalleFacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EnfermedadesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EnfermedadesXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EstadoTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.FacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.HistoriaClinicaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.MedicamentosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.MedicosXEspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.ObraSocialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.ObraSocialXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.OdontologosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PlanesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PrestacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PrestacionesPorPlanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.RecetaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.TipoDienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.TurnoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.UbicacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.odontologosPorTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.AlergiasRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades">
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.AlergiasXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.DetalleFacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EnfermedadesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EnfermedadesXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.EstadoTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.FacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.HistoriaClinicaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.MedicamentosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.MedicosXEspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.ObraSocialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.ObraSocialXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.OdontologosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PlanesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PrestacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.PrestacionesPorPlanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.RecetaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.TipoDienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.TurnoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.UbicacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno.odontologosPorTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurno">
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.EnfermedadesTableAdapter">
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.AlergiasTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetEnfermedades,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.AlergiasXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.DetalleFacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.EnfermedadesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.EnfermedadesXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.EspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.EstadoTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.FacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.HistoriaClinicaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.MedicamentosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.MedicosXEspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.ObraSocialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.ObraSocialXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.OdontologosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.PacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.PlanesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.PrestacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.PrestacionesPorPlanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.RecetaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.TipoDienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.TurnoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.UbicacionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.odontologosPorTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetOdontologosPorTurno,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Update rows in top-down order.
 </summary>
-</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetEnfermedades,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetOdontologosPorTurno,System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Insert rows in top-down order.
 </summary>
-</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetEnfermedades,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetOdontologosPorTurno,System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Delete rows in bottom-up order.
 </summary>
-</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
 </summary>
-</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetEnfermedades)">
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetOdontologosPorTurno)">
 	<summary>
 Update all changes to the dataset.
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateOrderOption">
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.TableAdapterManager.UpdateOrderOption">
 	<summary>
 Update Order Option
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.SelfReferenceComparer">
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.TableAdapterManager.SelfReferenceComparer">
 	<summary>
 Used to sort self-referenced table's rows
 </summary>
-</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager">
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnoTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.AlergiasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.AlergiasXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.DetalleFacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EnfermedadesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EnfermedadesXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EstadoTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.FacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.HistoriaClinicaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.MedicamentosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.MedicosXEspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.ObraSocialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.ObraSocialXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.OdontologosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PlanesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PrestacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PrestacionesPorPlanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.RecetaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.TipoDienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.TurnoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.UbicacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.odontologosPorTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.AlergiasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.AlergiasXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.DetalleFacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EnfermedadesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EnfermedadesXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EstadoTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.FacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.HistoriaClinicaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.MedicamentosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.MedicosXEspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.ObraSocialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.ObraSocialXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.OdontologosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PlanesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PrestacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PrestacionesPorPlanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.RecetaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.TipoDienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.TurnoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.UbicacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.odontologosPorTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.AlergiasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.AlergiasXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.DetalleFacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EnfermedadesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EnfermedadesXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.EstadoTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.FacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.HistoriaClinicaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.MedicamentosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.MedicosXEspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.ObraSocialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.ObraSocialXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.OdontologosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PlanesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PrestacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.PrestacionesPorPlanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.RecetaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.TipoDienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.TurnoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.UbicacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1.odontologosPorTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.AlergiasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.AlergiasXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.DetalleFacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.EnfermedadesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.EnfermedadesXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.EspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.EstadoTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.FacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.HistoriaClinicaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.MedicamentosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.MedicosXEspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.ObraSocialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.ObraSocialXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.OdontologosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.PacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.PlanesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.PrestacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.PrestacionesPorPlanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.RecetaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.TipoDienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.TurnoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.UbicacionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.odontologosPorTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.db_consultorio_odontologicoDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.db_consultorio_odontologicoDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.db_consultorio_odontologicoDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.db_consultorio_odontologicoDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.AlergiasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.AlergiasXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.DetalleFacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EnfermedadesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EnfermedadesXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EstadoTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.FacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.HistoriaClinicaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.MedicamentosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.MedicosXEspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.ObraSocialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.ObraSocialXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.OdontologosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PlanesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PrestacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PrestacionesPorPlanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.RecetaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.TipoDienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.TurnoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.UbicacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.estadisticasObraSocialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.AlergiasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.AlergiasXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.DetalleFacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EnfermedadesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EnfermedadesXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EstadoTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.FacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.HistoriaClinicaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.MedicamentosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.MedicosXEspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.ObraSocialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.ObraSocialXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.OdontologosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PlanesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PrestacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PrestacionesPorPlanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.RecetaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.TipoDienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.TurnoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.UbicacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.estadisticasObraSocialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.AlergiasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.AlergiasXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.DetalleFacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EnfermedadesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EnfermedadesXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.EstadoTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.FacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.HistoriaClinicaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.MedicamentosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.MedicosXEspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.ObraSocialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.ObraSocialXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.OdontologosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PlanesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PrestacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.PrestacionesPorPlanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.RecetaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.TipoDienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.TurnoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.UbicacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP.estadisticasObraSocialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredP">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.AlergiasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.AlergiasXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.DetalleFacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.EnfermedadesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.EnfermedadesXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.EspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.EstadoTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.FacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.HistoriaClinicaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.MedicamentosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.MedicosXEspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.ObraSocialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.ObraSocialXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.OdontologosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.PacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.PlanesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.PrestacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.PrestacionesPorPlanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.RecetaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.TipoDienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.TurnoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.UbicacionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.estadisticasObraSocialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetEstadisticaOSStoredP,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetEstadisticaOSStoredP,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetEstadisticaOSStoredP,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetEstadisticaOSStoredP)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEstadisticaOSStoredPTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.AlergiasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.AlergiasXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.DetalleFacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EnfermedadesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EnfermedadesXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EstadoTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.FacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.HistoriaClinicaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.MedicamentosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.MedicosXEspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.ObraSocialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.ObraSocialXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.OdontologosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PlanesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PrestacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PrestacionesPorPlanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.RecetaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.TipoDienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.TurnoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.UbicacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.odontologosPorTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.AlergiasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.AlergiasXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.DetalleFacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EnfermedadesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EnfermedadesXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EstadoTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.FacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.HistoriaClinicaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.MedicamentosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.MedicosXEspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.ObraSocialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.ObraSocialXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.OdontologosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PlanesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PrestacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PrestacionesPorPlanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.RecetaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.TipoDienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.TurnoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.UbicacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.odontologosPorTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.AlergiasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.AlergiasXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.DetalleFacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EnfermedadesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EnfermedadesXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.EstadoTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.FacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.HistoriaClinicaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.MedicamentosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.MedicosXEspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.ObraSocialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.ObraSocialXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.OdontologosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PlanesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PrestacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.PrestacionesPorPlanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.RecetaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.TipoDienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.TurnoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.UbicacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS.odontologosPorTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.AlergiasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.AlergiasXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.DetalleFacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.EnfermedadesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.EnfermedadesXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.EspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.EstadoTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.FacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.HistoriaClinicaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.MedicamentosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.MedicosXEspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.ObraSocialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.ObraSocialXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.OdontologosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.PacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.PlanesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.PrestacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.PrestacionesPorPlanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.RecetaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.TipoDienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.TurnoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.UbicacionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.odontologosPorTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetOdontologosPorTurnosMS,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetOdontologosPorTurnosMS,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetOdontologosPorTurnosMS,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetOdontologosPorTurnosMS)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosPorTurnosMSTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
@@ -162,6 +1774,90 @@ Used to sort self-referenced table's rows
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrueba.ObraSocialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrueba.ObraSocialXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrueba.PacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrueba.ObraSocialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrueba.ObraSocialXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrueba.PacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrueba.ObraSocialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrueba.ObraSocialXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrueba.PacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrueba">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPruebaTableAdapters.ObraSocialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPruebaTableAdapters.ObraSocialXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPruebaTableAdapters.PacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPruebaTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetPrueba,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPruebaTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetPrueba,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPruebaTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetPrueba,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPruebaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPruebaTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetPrueba)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPruebaTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPruebaTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPruebaTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
 </member><member name="T:ConsultorioOdontologico.DataSetOdontologos.OdontologosDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -214,6 +1910,918 @@ Used to sort self-referenced table's rows
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.AlergiasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.AlergiasXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.DetalleFacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EnfermedadesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EnfermedadesXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EstadoTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.FacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.HistoriaClinicaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.MedicamentosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.MedicosXEspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.ObraSocialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.ObraSocialXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.OdontologosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PlanesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PrestacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PrestacionesPorPlanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.RecetaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.TipoDienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.TurnoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.UbicacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.odontologosPorTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.AlergiasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.AlergiasXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.DetalleFacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EnfermedadesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EnfermedadesXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EstadoTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.FacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.HistoriaClinicaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.MedicamentosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.MedicosXEspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.ObraSocialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.ObraSocialXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.OdontologosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PlanesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PrestacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PrestacionesPorPlanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.RecetaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.TipoDienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.TurnoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.UbicacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.odontologosPorTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.AlergiasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.AlergiasXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.DetalleFacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EnfermedadesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EnfermedadesXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.EstadoTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.FacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.HistoriaClinicaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.MedicamentosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.MedicosXEspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.ObraSocialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.ObraSocialXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.OdontologosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PlanesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PrestacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.PrestacionesPorPlanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.RecetaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.TipoDienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.TurnoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.UbicacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2.odontologosPorTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.AlergiasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.AlergiasXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.DetalleFacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.EnfermedadesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.EnfermedadesXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.EspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.EstadoTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.FacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.HistoriaClinicaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.MedicamentosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.MedicosXEspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.ObraSocialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.ObraSocialXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.OdontologosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.PacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.PlanesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.PrestacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.PrestacionesPorPlanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.RecetaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.TipoDienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.TurnoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.UbicacionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.odontologosPorTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetOdontologosSolicitados2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetOdontologosSolicitados2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetOdontologosSolicitados2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetOdontologosSolicitados2)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados2TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestaciones.PrestacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestaciones.PrestacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestaciones.PrestacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestaciones">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.PrestacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetPrestaciones,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetPrestaciones,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetPrestaciones,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetPrestaciones)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetPrestacionesTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.AlergiasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.AlergiasXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.DetalleFacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EnfermedadesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EnfermedadesXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EstadoTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.FacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.HistoriaClinicaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.MedicamentosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.MedicosXEspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.ObraSocialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.ObraSocialXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.OdontologosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PlanesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PrestacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PrestacionesPorPlanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.RecetaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.TipoDienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.TurnoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.UbicacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.odontologosPorTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.AlergiasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.AlergiasXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.DetalleFacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EnfermedadesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EnfermedadesXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EstadoTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.FacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.HistoriaClinicaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.MedicamentosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.MedicosXEspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.ObraSocialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.ObraSocialXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.OdontologosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PlanesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PrestacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PrestacionesPorPlanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.RecetaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.TipoDienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.TurnoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.UbicacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.odontologosPorTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.AlergiasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.AlergiasXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.DetalleFacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EnfermedadesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EnfermedadesXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.EstadoTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.FacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.HistoriaClinicaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.MedicamentosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.MedicosXEspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.ObraSocialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.ObraSocialXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.OdontologosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PlanesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PrestacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.PrestacionesPorPlanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.RecetaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.TipoDienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.TurnoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.UbicacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet.odontologosPorTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.AlergiasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.AlergiasXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.DetalleFacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.EnfermedadesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.EnfermedadesXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.EspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.EstadoTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.FacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.HistoriaClinicaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.MedicamentosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.MedicosXEspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.ObraSocialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.ObraSocialXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.OdontologosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.PacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.PlanesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.PrestacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.PrestacionesPorPlanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.RecetaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TipoDienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TurnoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.UbicacionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.odontologosPorTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.db_consultorio_odontologicoDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.db_consultorio_odontologicoDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.db_consultorio_odontologicoDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.db_consultorio_odontologicoDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.db_consultorio_odontologicoDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades.EnfermedadesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades.EnfermedadesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades.EnfermedadesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedades">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.EnfermedadesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetEnfermedades,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetEnfermedades,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetEnfermedades,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetEnfermedades)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetEnfermedadesTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
 </member><member name="P:ConsultorioOdontologico.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
@@ -230,6 +2838,410 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 </member><member name="T:ConsultorioOdontologico.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.AlergiasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.AlergiasXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.DetalleFacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EnfermedadesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EnfermedadesXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EstadoTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.FacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.HistoriaClinicaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.MedicamentosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.MedicosXEspecialidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.ObraSocialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.ObraSocialXPacienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.OdontologosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PlanesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PrestacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PrestacionesPorPlanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.RecetaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.TipoDienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.TurnoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.UbicacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.odontologosPorTurnosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.AlergiasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.AlergiasXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.DetalleFacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EnfermedadesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EnfermedadesXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EstadoTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.FacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.HistoriaClinicaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.MedicamentosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.MedicosXEspecialidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.ObraSocialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.ObraSocialXPacienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.OdontologosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PlanesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PrestacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PrestacionesPorPlanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.RecetaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.TipoDienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.TurnoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.UbicacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.odontologosPorTurnosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.AlergiasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.AlergiasXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.DetalleFacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EnfermedadesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EnfermedadesXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.EstadoTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.FacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.HistoriaClinicaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.MedicamentosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.MedicosXEspecialidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.ObraSocialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.ObraSocialXPacienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.OdontologosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PlanesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PrestacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.PrestacionesPorPlanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.RecetaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.TipoDienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.TurnoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.UbicacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados.odontologosPorTurnosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitados">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.AlergiasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.AlergiasXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.DetalleFacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.EnfermedadesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.EnfermedadesXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.EspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.EstadoTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.FacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.HistoriaClinicaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.MedicamentosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.MedicosXEspecialidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.ObraSocialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.ObraSocialXPacienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.OdontologosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.PacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.PlanesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.PrestacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.PrestacionesPorPlanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.RecetaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.TipoDienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.TurnoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.UbicacionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.odontologosPorTurnosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConsultorioOdontologico.DataSetOdontologosSolicitados,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.TableAdapterManager.UpdateInsertedRows(ConsultorioOdontologico.DataSetOdontologosSolicitados,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.TableAdapterManager.UpdateDeletedRows(ConsultorioOdontologico.DataSetOdontologosSolicitados,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.TableAdapterManager.UpdateAll(ConsultorioOdontologico.DataSetOdontologosSolicitados)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ConsultorioOdontologico.DataSetOdontologosSolicitadosTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
 </member>
 </members>
