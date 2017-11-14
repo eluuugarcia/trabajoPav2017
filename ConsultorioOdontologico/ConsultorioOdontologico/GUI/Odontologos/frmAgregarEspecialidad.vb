@@ -2,6 +2,7 @@
 
     Private Sub frmAgregarEspecialidad_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         llenarGrid(BDHelper2.GetEspecialidadesParaGrilla())
+        dgvEspecialidades.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
 
     End Sub
 

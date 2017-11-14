@@ -1,12 +1,16 @@
 ﻿Public Class frmABMOdontologos
 
     Private Sub frmABMOdontologos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        deshabilitarCampos()
+        cmdAgregar.Enabled = False
+        cmdEliminar.Enabled = False
+        cmdModificar.Enabled = False
         llenarGrid(BDHelper2.GetOdontologos())
         Dim tabla As Data.DataTable = BDHelper2.GetEspecialidades()
         For Each fila As DataRow In tabla.Rows
             clbEspecialidades.Items.Add(fila.Item("nombre"))
         Next
+        dgvOdontologos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
 
 
     End Sub
@@ -87,6 +91,11 @@
 
                     MsgBox("El odontologo se ha registrado. LEGAJO: " & id)
                     llenarGrid(BDHelper2.GetOdontologos())
+                    borrarCampos()
+                    cmdAgregar.Enabled = False
+                    cmdEliminar.Enabled = False
+                    mtxtLegajo.Enabled = False
+                    deshabilitarCampos()
 
                 End If
 
@@ -132,38 +141,37 @@
         BDHelper2.modificarOdontologo(str)
         llenarGrid(BDHelper2.GetOdontologos())
         MsgBox("La informacion del odontologo ha sido actualizada")
+        cmdAgregar.Enabled = False
+        cmdEliminar.Enabled = False
+        cmdModificar.Enabled = False
 
     End Sub
 
     Private Sub cmdEliminar_Click(sender As Object, e As EventArgs) Handles cmdEliminar.Click
-        Dim legajo As String = dgvOdontologos.CurrentRow.Cells(0).Value
-        Dim str As String = "UPDATE Odontologos SET activo = 'F' WHERE legajo = " & legajo
-        BDHelper2.eliminarOdontologo(str)
-        llenarGrid(BDHelper2.GetOdontologos())
-        MsgBox("El odontologo ha sido dado de baja")
+        If MessageBox.Show("¿Desea eliminar el odontólogo?", _
+               "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question _
+               , MessageBoxDefaultButton.Button1) = Windows.Forms.DialogResult.OK Then
+            Dim legajo As String = dgvOdontologos.CurrentRow.Cells(0).Value
+            Dim str As String = "UPDATE Odontologos SET activo = 'F' WHERE legajo = " & legajo
+            BDHelper2.eliminarOdontologo(str)
+            llenarGrid(BDHelper2.GetOdontologos())
+            MsgBox("El odontologo ha sido dado de baja")
+            cmdAgregar.Enabled = False
+            cmdEliminar.Enabled = False
+            cmdModificar.Enabled = False
+            deshabilitarCampos()
+        End If
     End Sub
 
 
     Private Sub cmdBorrarCampos_Click(sender As Object, e As EventArgs) Handles cmdBorrarCampos.Click
-        mtxtLegajo.Text = ""
-        mtxtDNI.Text = ""
-        txtApellido.Text = ""
-        txtNombre.Text = ""
-        txtTelefono.Text = ""
-        mtxtDOB.Text = ""
-        txtDomicilio.Text = ""
-        txtMail.Text = ""
-        txtNroMatricula.Text = ""
-        cmbSexo.SelectedIndex = -1
-        clbEspecialidades.Items.Clear()
-        Dim tabla As Data.DataTable = BDHelper2.GetEspecialidades()
-        For Each fila As DataRow In tabla.Rows
-            clbEspecialidades.Items.Add(fila.Item("nombre"))
-        Next
-
+        borrarCampos()
     End Sub
 
     Private Sub dgvOdontologos_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvOdontologos.CellClick
+
+        cmdEliminar.Enabled = True
+        cmdModificar.Enabled = True
 
         For i = 0 To clbEspecialidades.Items.Count - 1
             clbEspecialidades.SetItemChecked(i, False)
@@ -179,7 +187,7 @@
         txtTelefono.Text = dgvOdontologos.CurrentRow.Cells(7).Value
         txtMail.Text = dgvOdontologos.CurrentRow.Cells(8).Value
         txtDomicilio.Text = dgvOdontologos.CurrentRow.Cells(9).Value
-        If dgvOdontologos.CurrentRow.Cells(4).Value = "F" Then
+        If dgvOdontologos.CurrentRow.Cells(4).Value.ToString.Trim = "F" Then
             cmbSexo.SelectedIndex = 1
         Else
             cmbSexo.SelectedIndex = 0
@@ -220,6 +228,58 @@
         frmMenu.Show()
     End Sub
 
+    Private Sub borrarCampos()
+        mtxtLegajo.Text = ""
+        mtxtDNI.Text = ""
+        txtApellido.Text = ""
+        txtNombre.Text = ""
+        txtTelefono.Text = ""
+        mtxtDOB.Text = ""
+        txtDomicilio.Text = ""
+        txtMail.Text = ""
+        txtNroMatricula.Text = ""
+        cmbSexo.SelectedIndex = -1
+        clbEspecialidades.Items.Clear()
+        Dim tabla As Data.DataTable = BDHelper2.GetEspecialidades()
+        For Each fila As DataRow In tabla.Rows
+            clbEspecialidades.Items.Add(fila.Item("nombre"))
+        Next
+    End Sub
+
+    Private Sub habilitarCampos()
+        mtxtDNI.Enabled = True
+        txtApellido.Enabled = True
+        txtNombre.Enabled = True
+        txtTelefono.Enabled = True
+        mtxtDOB.Enabled = True
+        txtDomicilio.Enabled = True
+        txtMail.Enabled = True
+        txtNroMatricula.Enabled = True
+        cmbSexo.Enabled = True
+        clbEspecialidades.Enabled = True
+        clbEspecialidades.Enabled = True
+    End Sub
+
+    Private Sub deshabilitarCampos()
+        mtxtDNI.Enabled = False
+        txtApellido.Enabled = False
+        txtNombre.Enabled = False
+        txtTelefono.Enabled = False
+        mtxtDOB.Enabled = False
+        txtDomicilio.Enabled = False
+        txtMail.Enabled = False
+        txtNroMatricula.Enabled = False
+        cmbSexo.Enabled = False
+        clbEspecialidades.Enabled = False
+        clbEspecialidades.Enabled = False
+    End Sub
 
 
+
+    Private Sub cmdNuevo_Click(sender As Object, e As EventArgs) Handles cmdNuevo.Click
+        cmdAgregar.Enabled = True
+        cmdEliminar.Enabled = False
+        mtxtLegajo.Enabled = False
+        habilitarCampos()
+    End Sub
 End Class

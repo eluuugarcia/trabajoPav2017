@@ -49,10 +49,6 @@ Partial Class frmABMOdontologos
         Me.lblTelefono = New System.Windows.Forms.Label()
         Me.cmdConsultar = New System.Windows.Forms.Button()
         Me.dgvOdontologos = New System.Windows.Forms.DataGridView()
-        Me.cmdAgregar = New System.Windows.Forms.Button()
-        Me.cmdModificar = New System.Windows.Forms.Button()
-        Me.cmdEliminar = New System.Windows.Forms.Button()
-        Me.cmdBorrarCampos = New System.Windows.Forms.Button()
         Me.Legajo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DNI = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -63,6 +59,11 @@ Partial Class frmABMOdontologos
         Me.mail = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nroMatricula = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.domicilio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cmdAgregar = New System.Windows.Forms.Button()
+        Me.cmdModificar = New System.Windows.Forms.Button()
+        Me.cmdEliminar = New System.Windows.Forms.Button()
+        Me.cmdBorrarCampos = New System.Windows.Forms.Button()
+        Me.cmdNuevo = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgvOdontologos, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -305,7 +306,7 @@ Partial Class frmABMOdontologos
         '
         'cmdConsultar
         '
-        Me.cmdConsultar.Location = New System.Drawing.Point(626, 316)
+        Me.cmdConsultar.Location = New System.Drawing.Point(540, 316)
         Me.cmdConsultar.Name = "cmdConsultar"
         Me.cmdConsultar.Size = New System.Drawing.Size(75, 23)
         Me.cmdConsultar.TabIndex = 20
@@ -321,42 +322,6 @@ Partial Class frmABMOdontologos
         Me.dgvOdontologos.ReadOnly = True
         Me.dgvOdontologos.Size = New System.Drawing.Size(694, 165)
         Me.dgvOdontologos.TabIndex = 21
-        '
-        'cmdAgregar
-        '
-        Me.cmdAgregar.Location = New System.Drawing.Point(14, 527)
-        Me.cmdAgregar.Name = "cmdAgregar"
-        Me.cmdAgregar.Size = New System.Drawing.Size(75, 23)
-        Me.cmdAgregar.TabIndex = 22
-        Me.cmdAgregar.Text = "Agregar"
-        Me.cmdAgregar.UseVisualStyleBackColor = True
-        '
-        'cmdModificar
-        '
-        Me.cmdModificar.Location = New System.Drawing.Point(95, 527)
-        Me.cmdModificar.Name = "cmdModificar"
-        Me.cmdModificar.Size = New System.Drawing.Size(75, 23)
-        Me.cmdModificar.TabIndex = 23
-        Me.cmdModificar.Text = "Modificar"
-        Me.cmdModificar.UseVisualStyleBackColor = True
-        '
-        'cmdEliminar
-        '
-        Me.cmdEliminar.Location = New System.Drawing.Point(176, 527)
-        Me.cmdEliminar.Name = "cmdEliminar"
-        Me.cmdEliminar.Size = New System.Drawing.Size(75, 23)
-        Me.cmdEliminar.TabIndex = 24
-        Me.cmdEliminar.Text = "Eliminar"
-        Me.cmdEliminar.UseVisualStyleBackColor = True
-        '
-        'cmdBorrarCampos
-        '
-        Me.cmdBorrarCampos.Location = New System.Drawing.Point(257, 527)
-        Me.cmdBorrarCampos.Name = "cmdBorrarCampos"
-        Me.cmdBorrarCampos.Size = New System.Drawing.Size(111, 23)
-        Me.cmdBorrarCampos.TabIndex = 25
-        Me.cmdBorrarCampos.Text = "Borrar Campos"
-        Me.cmdBorrarCampos.UseVisualStyleBackColor = True
         '
         'Legajo
         '
@@ -418,12 +383,58 @@ Partial Class frmABMOdontologos
         Me.domicilio.Name = "domicilio"
         Me.domicilio.ReadOnly = True
         '
+        'cmdAgregar
+        '
+        Me.cmdAgregar.Location = New System.Drawing.Point(14, 527)
+        Me.cmdAgregar.Name = "cmdAgregar"
+        Me.cmdAgregar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdAgregar.TabIndex = 22
+        Me.cmdAgregar.Text = "Agregar"
+        Me.cmdAgregar.UseVisualStyleBackColor = True
+        '
+        'cmdModificar
+        '
+        Me.cmdModificar.Location = New System.Drawing.Point(95, 527)
+        Me.cmdModificar.Name = "cmdModificar"
+        Me.cmdModificar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdModificar.TabIndex = 23
+        Me.cmdModificar.Text = "Modificar"
+        Me.cmdModificar.UseVisualStyleBackColor = True
+        '
+        'cmdEliminar
+        '
+        Me.cmdEliminar.Location = New System.Drawing.Point(176, 527)
+        Me.cmdEliminar.Name = "cmdEliminar"
+        Me.cmdEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdEliminar.TabIndex = 24
+        Me.cmdEliminar.Text = "Eliminar"
+        Me.cmdEliminar.UseVisualStyleBackColor = True
+        '
+        'cmdBorrarCampos
+        '
+        Me.cmdBorrarCampos.Location = New System.Drawing.Point(257, 527)
+        Me.cmdBorrarCampos.Name = "cmdBorrarCampos"
+        Me.cmdBorrarCampos.Size = New System.Drawing.Size(111, 23)
+        Me.cmdBorrarCampos.TabIndex = 25
+        Me.cmdBorrarCampos.Text = "Borrar Campos"
+        Me.cmdBorrarCampos.UseVisualStyleBackColor = True
+        '
+        'cmdNuevo
+        '
+        Me.cmdNuevo.Location = New System.Drawing.Point(626, 316)
+        Me.cmdNuevo.Name = "cmdNuevo"
+        Me.cmdNuevo.Size = New System.Drawing.Size(75, 23)
+        Me.cmdNuevo.TabIndex = 26
+        Me.cmdNuevo.Text = "Nuevo"
+        Me.cmdNuevo.UseVisualStyleBackColor = True
+        '
         'frmABMOdontologos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(719, 588)
+        Me.Controls.Add(Me.cmdNuevo)
         Me.Controls.Add(Me.cmdBorrarCampos)
         Me.Controls.Add(Me.cmdEliminar)
         Me.Controls.Add(Me.cmdModificar)
@@ -483,4 +494,5 @@ Partial Class frmABMOdontologos
     Friend WithEvents mail As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nroMatricula As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents domicilio As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cmdNuevo As System.Windows.Forms.Button
 End Class
