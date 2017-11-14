@@ -5,7 +5,7 @@
     Public Property Sexo As String
     Public Property DOB As Date
     Public Property NroMatricula As Integer
-    Public Property TelCont As Integer
+    Public Property TelContacto As Integer
     Public Property EMail As String
     Public Property Direccion As String
 
