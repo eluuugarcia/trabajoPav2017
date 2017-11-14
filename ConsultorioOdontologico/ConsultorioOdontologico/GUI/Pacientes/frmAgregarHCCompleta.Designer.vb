@@ -54,28 +54,46 @@ Partial Class frmAgregarHCCompleta
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.grbAlergias = New System.Windows.Forms.GroupBox()
         Me.dgvAlergias = New System.Windows.Forms.DataGridView()
+        Me.idAlergia = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DescripcionAlergia = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cmdAgregarNuevaAlergia = New System.Windows.Forms.Button()
         Me.cmdAgregarAlergias = New System.Windows.Forms.Button()
         Me.rtxtDescripcionAlergias = New System.Windows.Forms.RichTextBox()
         Me.cmbAlergias = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblDescAlergias = New System.Windows.Forms.Label()
+        Me.lblNombreAlergia = New System.Windows.Forms.Label()
         Me.cmdGuardarCambios = New System.Windows.Forms.Button()
-        Me.idAlergia = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DescripcionAlergia = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grbRecetas = New System.Windows.Forms.GroupBox()
+        Me.cmdAgregarReceta = New System.Windows.Forms.Button()
+        Me.rtxtObservacionesRecetas = New System.Windows.Forms.RichTextBox()
+        Me.lblObservacionesReceta = New System.Windows.Forms.Label()
+        Me.cmdAgregarNuevoMedicamento = New System.Windows.Forms.Button()
+        Me.cmbMedicamentos = New System.Windows.Forms.ComboBox()
+        Me.lblMedicamentos = New System.Windows.Forms.Label()
+        Me.cmbOdontologo = New System.Windows.Forms.ComboBox()
+        Me.lblOdontologos = New System.Windows.Forms.Label()
+        Me.dgvRecetas = New System.Windows.Forms.DataGridView()
+        Me.fechaReceta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Odontologo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.legajoOdontologo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MedicamentoRecetado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.idMedicamento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ObservacionesRecetas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.grbHC.SuspendLayout()
         CType(Me.dgvHC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grbDiagnosticos.SuspendLayout()
         CType(Me.dgvEnfermedades, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grbAlergias.SuspendLayout()
         CType(Me.dgvAlergias, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.grbRecetas.SuspendLayout()
+        CType(Me.dgvRecetas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblObservaciones
         '
         Me.lblObservaciones.AutoSize = True
-        Me.lblObservaciones.Location = New System.Drawing.Point(569, 138)
+        Me.lblObservaciones.Location = New System.Drawing.Point(567, 99)
         Me.lblObservaciones.Name = "lblObservaciones"
         Me.lblObservaciones.Size = New System.Drawing.Size(78, 13)
         Me.lblObservaciones.TabIndex = 17
@@ -83,16 +101,16 @@ Partial Class frmAgregarHCCompleta
         '
         'rtxtObservaciones
         '
-        Me.rtxtObservaciones.Location = New System.Drawing.Point(683, 135)
+        Me.rtxtObservaciones.Location = New System.Drawing.Point(681, 96)
         Me.rtxtObservaciones.Name = "rtxtObservaciones"
-        Me.rtxtObservaciones.Size = New System.Drawing.Size(317, 96)
+        Me.rtxtObservaciones.Size = New System.Drawing.Size(317, 61)
         Me.rtxtObservaciones.TabIndex = 16
         Me.rtxtObservaciones.Text = ""
         '
         'lblTipoDiente
         '
         Me.lblTipoDiente.AutoSize = True
-        Me.lblTipoDiente.Location = New System.Drawing.Point(569, 102)
+        Me.lblTipoDiente.Location = New System.Drawing.Point(853, 70)
         Me.lblTipoDiente.Name = "lblTipoDiente"
         Me.lblTipoDiente.Size = New System.Drawing.Size(42, 13)
         Me.lblTipoDiente.TabIndex = 15
@@ -120,7 +138,7 @@ Partial Class frmAgregarHCCompleta
         '
         Me.cmbTipoDiente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbTipoDiente.FormattingEnabled = True
-        Me.cmbTipoDiente.Location = New System.Drawing.Point(683, 99)
+        Me.cmbTipoDiente.Location = New System.Drawing.Point(943, 67)
         Me.cmbTipoDiente.Name = "cmbTipoDiente"
         Me.cmbTipoDiente.Size = New System.Drawing.Size(147, 21)
         Me.cmbTipoDiente.TabIndex = 12
@@ -145,7 +163,7 @@ Partial Class frmAgregarHCCompleta
         '
         'cmdAgregarHC
         '
-        Me.cmdAgregarHC.Location = New System.Drawing.Point(925, 251)
+        Me.cmdAgregarHC.Location = New System.Drawing.Point(923, 163)
         Me.cmdAgregarHC.Name = "cmdAgregarHC"
         Me.cmdAgregarHC.Size = New System.Drawing.Size(75, 23)
         Me.cmdAgregarHC.TabIndex = 9
@@ -164,9 +182,9 @@ Partial Class frmAgregarHCCompleta
         Me.grbHC.Controls.Add(Me.lblTipoDiente)
         Me.grbHC.Controls.Add(Me.cmbTipoDiente)
         Me.grbHC.Controls.Add(Me.lblUbicacion)
-        Me.grbHC.Location = New System.Drawing.Point(12, 12)
+        Me.grbHC.Location = New System.Drawing.Point(12, -10)
         Me.grbHC.Name = "grbHC"
-        Me.grbHC.Size = New System.Drawing.Size(1015, 304)
+        Me.grbHC.Size = New System.Drawing.Size(1096, 211)
         Me.grbHC.TabIndex = 21
         Me.grbHC.TabStop = False
         Me.grbHC.Text = "Historias Clinicas"
@@ -178,7 +196,7 @@ Partial Class frmAgregarHCCompleta
         Me.dgvHC.Location = New System.Drawing.Point(22, 28)
         Me.dgvHC.Name = "dgvHC"
         Me.dgvHC.ReadOnly = True
-        Me.dgvHC.Size = New System.Drawing.Size(539, 246)
+        Me.dgvHC.Size = New System.Drawing.Size(539, 168)
         Me.dgvHC.TabIndex = 18
         '
         'Fecha
@@ -241,9 +259,9 @@ Partial Class frmAgregarHCCompleta
         Me.grbDiagnosticos.Controls.Add(Me.cmbEnfermedades)
         Me.grbDiagnosticos.Controls.Add(Me.lblDescripcion)
         Me.grbDiagnosticos.Controls.Add(Me.lblNombre)
-        Me.grbDiagnosticos.Location = New System.Drawing.Point(12, 322)
+        Me.grbDiagnosticos.Location = New System.Drawing.Point(12, 207)
         Me.grbDiagnosticos.Name = "grbDiagnosticos"
-        Me.grbDiagnosticos.Size = New System.Drawing.Size(1015, 211)
+        Me.grbDiagnosticos.Size = New System.Drawing.Size(561, 246)
         Me.grbDiagnosticos.TabIndex = 22
         Me.grbDiagnosticos.TabStop = False
         Me.grbDiagnosticos.Text = "Diagnosticos"
@@ -254,7 +272,7 @@ Partial Class frmAgregarHCCompleta
         Me.dgvEnfermedades.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idEnfermedad, Me.Nombre, Me.Descripcion})
         Me.dgvEnfermedades.Location = New System.Drawing.Point(22, 40)
         Me.dgvEnfermedades.Name = "dgvEnfermedades"
-        Me.dgvEnfermedades.Size = New System.Drawing.Size(539, 154)
+        Me.dgvEnfermedades.Size = New System.Drawing.Size(391, 103)
         Me.dgvEnfermedades.TabIndex = 21
         '
         'idEnfermedad
@@ -275,7 +293,7 @@ Partial Class frmAgregarHCCompleta
         '
         'cmdAgregarDiagnosticos
         '
-        Me.cmdAgregarDiagnosticos.Location = New System.Drawing.Point(925, 171)
+        Me.cmdAgregarDiagnosticos.Location = New System.Drawing.Point(428, 204)
         Me.cmdAgregarDiagnosticos.Name = "cmdAgregarDiagnosticos"
         Me.cmdAgregarDiagnosticos.Size = New System.Drawing.Size(75, 23)
         Me.cmdAgregarDiagnosticos.TabIndex = 20
@@ -285,7 +303,7 @@ Partial Class frmAgregarHCCompleta
         'cmdAgregarNuevoDiagnostico
         '
         Me.cmdAgregarNuevoDiagnostico.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAgregarNuevoDiagnostico.Location = New System.Drawing.Point(836, 42)
+        Me.cmdAgregarNuevoDiagnostico.Location = New System.Drawing.Point(286, 151)
         Me.cmdAgregarNuevoDiagnostico.Name = "cmdAgregarNuevoDiagnostico"
         Me.cmdAgregarNuevoDiagnostico.Size = New System.Drawing.Size(23, 23)
         Me.cmdAgregarNuevoDiagnostico.TabIndex = 16
@@ -294,9 +312,9 @@ Partial Class frmAgregarHCCompleta
         '
         'rtxtDescripcion
         '
-        Me.rtxtDescripcion.Location = New System.Drawing.Point(683, 69)
+        Me.rtxtDescripcion.Location = New System.Drawing.Point(133, 181)
         Me.rtxtDescripcion.Name = "rtxtDescripcion"
-        Me.rtxtDescripcion.Size = New System.Drawing.Size(317, 96)
+        Me.rtxtDescripcion.Size = New System.Drawing.Size(280, 46)
         Me.rtxtDescripcion.TabIndex = 15
         Me.rtxtDescripcion.Text = ""
         '
@@ -304,7 +322,7 @@ Partial Class frmAgregarHCCompleta
         '
         Me.cmbEnfermedades.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbEnfermedades.FormattingEnabled = True
-        Me.cmbEnfermedades.Location = New System.Drawing.Point(683, 42)
+        Me.cmbEnfermedades.Location = New System.Drawing.Point(133, 151)
         Me.cmbEnfermedades.Name = "cmbEnfermedades"
         Me.cmbEnfermedades.Size = New System.Drawing.Size(147, 21)
         Me.cmbEnfermedades.TabIndex = 14
@@ -312,7 +330,7 @@ Partial Class frmAgregarHCCompleta
         'lblDescripcion
         '
         Me.lblDescripcion.AutoSize = True
-        Me.lblDescripcion.Location = New System.Drawing.Point(569, 69)
+        Me.lblDescripcion.Location = New System.Drawing.Point(19, 181)
         Me.lblDescripcion.Name = "lblDescripcion"
         Me.lblDescripcion.Size = New System.Drawing.Size(63, 13)
         Me.lblDescripcion.TabIndex = 13
@@ -321,7 +339,7 @@ Partial Class frmAgregarHCCompleta
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Location = New System.Drawing.Point(569, 40)
+        Me.lblNombre.Location = New System.Drawing.Point(19, 149)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(51, 13)
         Me.lblNombre.TabIndex = 12
@@ -334,11 +352,11 @@ Partial Class frmAgregarHCCompleta
         Me.grbAlergias.Controls.Add(Me.cmdAgregarAlergias)
         Me.grbAlergias.Controls.Add(Me.rtxtDescripcionAlergias)
         Me.grbAlergias.Controls.Add(Me.cmbAlergias)
-        Me.grbAlergias.Controls.Add(Me.Label1)
-        Me.grbAlergias.Controls.Add(Me.Label2)
-        Me.grbAlergias.Location = New System.Drawing.Point(12, 539)
+        Me.grbAlergias.Controls.Add(Me.lblDescAlergias)
+        Me.grbAlergias.Controls.Add(Me.lblNombreAlergia)
+        Me.grbAlergias.Location = New System.Drawing.Point(584, 207)
         Me.grbAlergias.Name = "grbAlergias"
-        Me.grbAlergias.Size = New System.Drawing.Size(1015, 219)
+        Me.grbAlergias.Size = New System.Drawing.Size(524, 246)
         Me.grbAlergias.TabIndex = 23
         Me.grbAlergias.TabStop = False
         Me.grbAlergias.Text = "Alergias"
@@ -349,72 +367,8 @@ Partial Class frmAgregarHCCompleta
         Me.dgvAlergias.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idAlergia, Me.DataGridViewTextBoxColumn2, Me.DescripcionAlergia})
         Me.dgvAlergias.Location = New System.Drawing.Point(22, 34)
         Me.dgvAlergias.Name = "dgvAlergias"
-        Me.dgvAlergias.Size = New System.Drawing.Size(539, 154)
+        Me.dgvAlergias.Size = New System.Drawing.Size(359, 94)
         Me.dgvAlergias.TabIndex = 27
-        '
-        'cmdAgregarNuevaAlergia
-        '
-        Me.cmdAgregarNuevaAlergia.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAgregarNuevaAlergia.Location = New System.Drawing.Point(836, 34)
-        Me.cmdAgregarNuevaAlergia.Name = "cmdAgregarNuevaAlergia"
-        Me.cmdAgregarNuevaAlergia.Size = New System.Drawing.Size(23, 23)
-        Me.cmdAgregarNuevaAlergia.TabIndex = 26
-        Me.cmdAgregarNuevaAlergia.Text = "+"
-        Me.cmdAgregarNuevaAlergia.UseVisualStyleBackColor = True
-        '
-        'cmdAgregarAlergias
-        '
-        Me.cmdAgregarAlergias.Location = New System.Drawing.Point(925, 173)
-        Me.cmdAgregarAlergias.Name = "cmdAgregarAlergias"
-        Me.cmdAgregarAlergias.Size = New System.Drawing.Size(75, 23)
-        Me.cmdAgregarAlergias.TabIndex = 25
-        Me.cmdAgregarAlergias.Text = "Agregar"
-        Me.cmdAgregarAlergias.UseVisualStyleBackColor = True
-        '
-        'rtxtDescripcionAlergias
-        '
-        Me.rtxtDescripcionAlergias.Location = New System.Drawing.Point(683, 61)
-        Me.rtxtDescripcionAlergias.Name = "rtxtDescripcionAlergias"
-        Me.rtxtDescripcionAlergias.Size = New System.Drawing.Size(317, 96)
-        Me.rtxtDescripcionAlergias.TabIndex = 24
-        Me.rtxtDescripcionAlergias.Text = ""
-        '
-        'cmbAlergias
-        '
-        Me.cmbAlergias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbAlergias.FormattingEnabled = True
-        Me.cmbAlergias.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmbAlergias.Location = New System.Drawing.Point(683, 34)
-        Me.cmbAlergias.Name = "cmbAlergias"
-        Me.cmbAlergias.Size = New System.Drawing.Size(147, 21)
-        Me.cmbAlergias.TabIndex = 23
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(569, 61)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
-        Me.Label1.TabIndex = 22
-        Me.Label1.Text = "Descripcion"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(569, 32)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 13)
-        Me.Label2.TabIndex = 21
-        Me.Label2.Text = "* Nombre"
-        '
-        'cmdGuardarCambios
-        '
-        Me.cmdGuardarCambios.Location = New System.Drawing.Point(800, 781)
-        Me.cmdGuardarCambios.Name = "cmdGuardarCambios"
-        Me.cmdGuardarCambios.Size = New System.Drawing.Size(227, 23)
-        Me.cmdGuardarCambios.TabIndex = 24
-        Me.cmdGuardarCambios.Text = "Guardar Cambios"
-        Me.cmdGuardarCambios.UseVisualStyleBackColor = True
         '
         'idAlergia
         '
@@ -432,12 +386,210 @@ Partial Class frmAgregarHCCompleta
         Me.DescripcionAlergia.HeaderText = "Descripción"
         Me.DescripcionAlergia.Name = "DescripcionAlergia"
         '
+        'cmdAgregarNuevaAlergia
+        '
+        Me.cmdAgregarNuevaAlergia.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAgregarNuevaAlergia.Location = New System.Drawing.Point(286, 133)
+        Me.cmdAgregarNuevaAlergia.Name = "cmdAgregarNuevaAlergia"
+        Me.cmdAgregarNuevaAlergia.Size = New System.Drawing.Size(23, 23)
+        Me.cmdAgregarNuevaAlergia.TabIndex = 26
+        Me.cmdAgregarNuevaAlergia.Text = "+"
+        Me.cmdAgregarNuevaAlergia.UseVisualStyleBackColor = True
+        '
+        'cmdAgregarAlergias
+        '
+        Me.cmdAgregarAlergias.Location = New System.Drawing.Point(399, 206)
+        Me.cmdAgregarAlergias.Name = "cmdAgregarAlergias"
+        Me.cmdAgregarAlergias.Size = New System.Drawing.Size(75, 23)
+        Me.cmdAgregarAlergias.TabIndex = 25
+        Me.cmdAgregarAlergias.Text = "Agregar"
+        Me.cmdAgregarAlergias.UseVisualStyleBackColor = True
+        '
+        'rtxtDescripcionAlergias
+        '
+        Me.rtxtDescripcionAlergias.Location = New System.Drawing.Point(101, 162)
+        Me.rtxtDescripcionAlergias.Name = "rtxtDescripcionAlergias"
+        Me.rtxtDescripcionAlergias.Size = New System.Drawing.Size(280, 67)
+        Me.rtxtDescripcionAlergias.TabIndex = 24
+        Me.rtxtDescripcionAlergias.Text = ""
+        '
+        'cmbAlergias
+        '
+        Me.cmbAlergias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbAlergias.FormattingEnabled = True
+        Me.cmbAlergias.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.cmbAlergias.Location = New System.Drawing.Point(133, 133)
+        Me.cmbAlergias.Name = "cmbAlergias"
+        Me.cmbAlergias.Size = New System.Drawing.Size(147, 21)
+        Me.cmbAlergias.TabIndex = 23
+        '
+        'lblDescAlergias
+        '
+        Me.lblDescAlergias.AutoSize = True
+        Me.lblDescAlergias.Location = New System.Drawing.Point(19, 165)
+        Me.lblDescAlergias.Name = "lblDescAlergias"
+        Me.lblDescAlergias.Size = New System.Drawing.Size(63, 13)
+        Me.lblDescAlergias.TabIndex = 22
+        Me.lblDescAlergias.Text = "Descripcion"
+        '
+        'lblNombreAlergia
+        '
+        Me.lblNombreAlergia.AutoSize = True
+        Me.lblNombreAlergia.Location = New System.Drawing.Point(19, 131)
+        Me.lblNombreAlergia.Name = "lblNombreAlergia"
+        Me.lblNombreAlergia.Size = New System.Drawing.Size(51, 13)
+        Me.lblNombreAlergia.TabIndex = 21
+        Me.lblNombreAlergia.Text = "* Nombre"
+        '
+        'cmdGuardarCambios
+        '
+        Me.cmdGuardarCambios.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.cmdGuardarCambios.Location = New System.Drawing.Point(1047, 634)
+        Me.cmdGuardarCambios.Name = "cmdGuardarCambios"
+        Me.cmdGuardarCambios.Size = New System.Drawing.Size(110, 27)
+        Me.cmdGuardarCambios.TabIndex = 28
+        Me.cmdGuardarCambios.Text = "Guardar Cambios"
+        Me.cmdGuardarCambios.UseVisualStyleBackColor = True
+        '
+        'grbRecetas
+        '
+        Me.grbRecetas.Controls.Add(Me.cmdAgregarReceta)
+        Me.grbRecetas.Controls.Add(Me.rtxtObservacionesRecetas)
+        Me.grbRecetas.Controls.Add(Me.lblObservacionesReceta)
+        Me.grbRecetas.Controls.Add(Me.cmdAgregarNuevoMedicamento)
+        Me.grbRecetas.Controls.Add(Me.cmbMedicamentos)
+        Me.grbRecetas.Controls.Add(Me.lblMedicamentos)
+        Me.grbRecetas.Controls.Add(Me.cmbOdontologo)
+        Me.grbRecetas.Controls.Add(Me.lblOdontologos)
+        Me.grbRecetas.Controls.Add(Me.dgvRecetas)
+        Me.grbRecetas.Location = New System.Drawing.Point(13, 459)
+        Me.grbRecetas.Name = "grbRecetas"
+        Me.grbRecetas.Size = New System.Drawing.Size(1095, 186)
+        Me.grbRecetas.TabIndex = 30
+        Me.grbRecetas.TabStop = False
+        Me.grbRecetas.Text = "Recetas"
+        '
+        'cmdAgregarReceta
+        '
+        Me.cmdAgregarReceta.Location = New System.Drawing.Point(984, 157)
+        Me.cmdAgregarReceta.Name = "cmdAgregarReceta"
+        Me.cmdAgregarReceta.Size = New System.Drawing.Size(75, 23)
+        Me.cmdAgregarReceta.TabIndex = 31
+        Me.cmdAgregarReceta.Text = "Agregar"
+        Me.cmdAgregarReceta.UseVisualStyleBackColor = True
+        '
+        'rtxtObservacionesRecetas
+        '
+        Me.rtxtObservacionesRecetas.Location = New System.Drawing.Point(819, 74)
+        Me.rtxtObservacionesRecetas.Name = "rtxtObservacionesRecetas"
+        Me.rtxtObservacionesRecetas.Size = New System.Drawing.Size(240, 67)
+        Me.rtxtObservacionesRecetas.TabIndex = 30
+        Me.rtxtObservacionesRecetas.Text = ""
+        '
+        'lblObservacionesReceta
+        '
+        Me.lblObservacionesReceta.AutoSize = True
+        Me.lblObservacionesReceta.Location = New System.Drawing.Point(677, 75)
+        Me.lblObservacionesReceta.Name = "lblObservacionesReceta"
+        Me.lblObservacionesReceta.Size = New System.Drawing.Size(78, 13)
+        Me.lblObservacionesReceta.TabIndex = 29
+        Me.lblObservacionesReceta.Text = "Observaciones"
+        '
+        'cmdAgregarNuevoMedicamento
+        '
+        Me.cmdAgregarNuevoMedicamento.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAgregarNuevoMedicamento.Location = New System.Drawing.Point(1000, 45)
+        Me.cmdAgregarNuevoMedicamento.Name = "cmdAgregarNuevoMedicamento"
+        Me.cmdAgregarNuevoMedicamento.Size = New System.Drawing.Size(23, 23)
+        Me.cmdAgregarNuevoMedicamento.TabIndex = 28
+        Me.cmdAgregarNuevoMedicamento.Text = "+"
+        Me.cmdAgregarNuevoMedicamento.UseVisualStyleBackColor = True
+        '
+        'cmbMedicamentos
+        '
+        Me.cmbMedicamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbMedicamentos.FormattingEnabled = True
+        Me.cmbMedicamentos.Location = New System.Drawing.Point(819, 45)
+        Me.cmbMedicamentos.Name = "cmbMedicamentos"
+        Me.cmbMedicamentos.Size = New System.Drawing.Size(175, 21)
+        Me.cmbMedicamentos.TabIndex = 5
+        '
+        'lblMedicamentos
+        '
+        Me.lblMedicamentos.AutoSize = True
+        Me.lblMedicamentos.Location = New System.Drawing.Point(676, 53)
+        Me.lblMedicamentos.Name = "lblMedicamentos"
+        Me.lblMedicamentos.Size = New System.Drawing.Size(121, 13)
+        Me.lblMedicamentos.TabIndex = 4
+        Me.lblMedicamentos.Text = "Medicamento Recetado"
+        '
+        'cmbOdontologo
+        '
+        Me.cmbOdontologo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbOdontologo.FormattingEnabled = True
+        Me.cmbOdontologo.Location = New System.Drawing.Point(819, 20)
+        Me.cmbOdontologo.Name = "cmbOdontologo"
+        Me.cmbOdontologo.Size = New System.Drawing.Size(175, 21)
+        Me.cmbOdontologo.TabIndex = 3
+        '
+        'lblOdontologos
+        '
+        Me.lblOdontologos.AutoSize = True
+        Me.lblOdontologos.Location = New System.Drawing.Point(677, 20)
+        Me.lblOdontologos.Name = "lblOdontologos"
+        Me.lblOdontologos.Size = New System.Drawing.Size(62, 13)
+        Me.lblOdontologos.TabIndex = 2
+        Me.lblOdontologos.Text = "Odontologo"
+        '
+        'dgvRecetas
+        '
+        Me.dgvRecetas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvRecetas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fechaReceta, Me.Odontologo, Me.legajoOdontologo, Me.MedicamentoRecetado, Me.idMedicamento, Me.ObservacionesRecetas})
+        Me.dgvRecetas.Location = New System.Drawing.Point(21, 20)
+        Me.dgvRecetas.Name = "dgvRecetas"
+        Me.dgvRecetas.Size = New System.Drawing.Size(649, 150)
+        Me.dgvRecetas.TabIndex = 0
+        '
+        'fechaReceta
+        '
+        Me.fechaReceta.HeaderText = "Fecha"
+        Me.fechaReceta.Name = "fechaReceta"
+        '
+        'Odontologo
+        '
+        Me.Odontologo.HeaderText = "Odontologo"
+        Me.Odontologo.Name = "Odontologo"
+        '
+        'legajoOdontologo
+        '
+        Me.legajoOdontologo.HeaderText = "legajo"
+        Me.legajoOdontologo.Name = "legajoOdontologo"
+        Me.legajoOdontologo.Visible = False
+        '
+        'MedicamentoRecetado
+        '
+        Me.MedicamentoRecetado.HeaderText = "Medicamento"
+        Me.MedicamentoRecetado.Name = "MedicamentoRecetado"
+        '
+        'idMedicamento
+        '
+        Me.idMedicamento.HeaderText = "idMedicamento"
+        Me.idMedicamento.Name = "idMedicamento"
+        Me.idMedicamento.Visible = False
+        '
+        'ObservacionesRecetas
+        '
+        Me.ObservacionesRecetas.HeaderText = "Observaciones"
+        Me.ObservacionesRecetas.Name = "ObservacionesRecetas"
+        '
         'frmAgregarHCCompleta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1048, 809)
+        Me.ClientSize = New System.Drawing.Size(1045, 718)
+        Me.Controls.Add(Me.grbRecetas)
         Me.Controls.Add(Me.cmdGuardarCambios)
         Me.Controls.Add(Me.grbAlergias)
         Me.Controls.Add(Me.grbDiagnosticos)
@@ -453,6 +605,9 @@ Partial Class frmAgregarHCCompleta
         Me.grbAlergias.ResumeLayout(False)
         Me.grbAlergias.PerformLayout()
         CType(Me.dgvAlergias, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.grbRecetas.ResumeLayout(False)
+        Me.grbRecetas.PerformLayout()
+        CType(Me.dgvRecetas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -478,9 +633,8 @@ Partial Class frmAgregarHCCompleta
     Friend WithEvents cmdAgregarAlergias As System.Windows.Forms.Button
     Friend WithEvents rtxtDescripcionAlergias As System.Windows.Forms.RichTextBox
     Friend WithEvents cmbAlergias As System.Windows.Forms.ComboBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents cmdGuardarCambios As System.Windows.Forms.Button
+    Friend WithEvents lblDescAlergias As System.Windows.Forms.Label
+    Friend WithEvents lblNombreAlergia As System.Windows.Forms.Label
     Friend WithEvents dgvHC As System.Windows.Forms.DataGridView
     Friend WithEvents Fecha As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents idPrestacion As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -498,4 +652,21 @@ Partial Class frmAgregarHCCompleta
     Friend WithEvents idAlergia As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionAlergia As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cmdGuardarCambios As System.Windows.Forms.Button
+    Friend WithEvents grbRecetas As System.Windows.Forms.GroupBox
+    Friend WithEvents cmdAgregarNuevoMedicamento As System.Windows.Forms.Button
+    Friend WithEvents cmbMedicamentos As System.Windows.Forms.ComboBox
+    Friend WithEvents lblMedicamentos As System.Windows.Forms.Label
+    Friend WithEvents cmbOdontologo As System.Windows.Forms.ComboBox
+    Friend WithEvents lblOdontologos As System.Windows.Forms.Label
+    Friend WithEvents dgvRecetas As System.Windows.Forms.DataGridView
+    Friend WithEvents cmdAgregarReceta As System.Windows.Forms.Button
+    Friend WithEvents rtxtObservacionesRecetas As System.Windows.Forms.RichTextBox
+    Friend WithEvents lblObservacionesReceta As System.Windows.Forms.Label
+    Friend WithEvents fechaReceta As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Odontologo As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents legajoOdontologo As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents MedicamentoRecetado As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents idMedicamento As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ObservacionesRecetas As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

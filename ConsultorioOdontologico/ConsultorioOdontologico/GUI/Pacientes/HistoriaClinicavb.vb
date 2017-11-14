@@ -40,6 +40,16 @@
 
     End Sub
 
+    Private Sub llenarGridRecetas(ByVal source As Data.DataTable)
+
+        dgvHC.Rows.Clear()
+        For Each fila As DataRow In source.Rows
+            dgvRecetas.Rows.Add(New String() {fila.Item("fecha"), fila.Item("Nombre_Completo"), fila.Item("legajoOdontologo"), fila.Item("Nombre_Med"), fila.Item("idMedicamento"), fila.Item("observaciones")})
+
+        Next
+
+    End Sub
+
 
     Private Sub cmdAgregrarEntrada_Click(sender As Object, e As EventArgs) Handles cmdAgregarEntrada.Click
         Me.Hide()
@@ -47,10 +57,13 @@
         llenarGridHC(BDHelper2.GetHistoriasClinicas(dni))
         llenarGridEnfermedades(BDHelper2.GetEnfermedadesDePaciente(dni))
         llenarGridAlergias(BDHelper2.GetAlergiasDePaciente(dni))
+        llenarGridRecetas(BDHelper2.GetRecetasDePaciente(dni))
     End Sub
 
     Private Sub frmHistoriaClinica_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         Me.Hide()
         frmABMPacientes.Show()
     End Sub
+
+
 End Class

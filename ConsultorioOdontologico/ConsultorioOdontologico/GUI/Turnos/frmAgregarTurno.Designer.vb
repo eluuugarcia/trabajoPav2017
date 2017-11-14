@@ -76,7 +76,7 @@ Partial Class frmAgregarTurno
         'lblOdontologo
         '
         Me.lblOdontologo.AutoSize = True
-        Me.lblOdontologo.Location = New System.Drawing.Point(398, 33)
+        Me.lblOdontologo.Location = New System.Drawing.Point(447, 33)
         Me.lblOdontologo.Name = "lblOdontologo"
         Me.lblOdontologo.Size = New System.Drawing.Size(74, 13)
         Me.lblOdontologo.TabIndex = 4
@@ -105,7 +105,7 @@ Partial Class frmAgregarTurno
         Me.grbPacientes.Controls.Add(Me.txtPaciente)
         Me.grbPacientes.Location = New System.Drawing.Point(12, 12)
         Me.grbPacientes.Name = "grbPacientes"
-        Me.grbPacientes.Size = New System.Drawing.Size(643, 324)
+        Me.grbPacientes.Size = New System.Drawing.Size(688, 324)
         Me.grbPacientes.TabIndex = 19
         Me.grbPacientes.TabStop = False
         Me.grbPacientes.Text = "Datos del turno"
@@ -131,9 +131,9 @@ Partial Class frmAgregarTurno
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(432, 296)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(62, 13)
+        Me.Label7.Size = New System.Drawing.Size(89, 13)
         Me.Label7.TabIndex = 33
-        Me.Label7.Text = "Monto Final"
+        Me.Label7.Text = "Monto Final       $"
         '
         'Label8
         '
@@ -157,9 +157,9 @@ Partial Class frmAgregarTurno
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(22, 296)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(79, 13)
+        Me.Label6.Size = New System.Drawing.Size(97, 13)
         Me.Label6.TabIndex = 30
-        Me.Label6.Text = "Monto Cubierto"
+        Me.Label6.Text = "Monto Cubierto    $"
         '
         'Buscar
         '
@@ -243,7 +243,7 @@ Partial Class frmAgregarTurno
         '
         'Cancelar
         '
-        Me.Cancelar.Location = New System.Drawing.Point(580, 355)
+        Me.Cancelar.Location = New System.Drawing.Point(625, 359)
         Me.Cancelar.Name = "Cancelar"
         Me.Cancelar.Size = New System.Drawing.Size(75, 23)
         Me.Cancelar.TabIndex = 35
@@ -252,7 +252,7 @@ Partial Class frmAgregarTurno
         '
         'Agregar
         '
-        Me.Agregar.Location = New System.Drawing.Point(471, 355)
+        Me.Agregar.Location = New System.Drawing.Point(516, 359)
         Me.Agregar.Name = "Agregar"
         Me.Agregar.Size = New System.Drawing.Size(75, 23)
         Me.Agregar.TabIndex = 36
@@ -264,7 +264,7 @@ Partial Class frmAgregarTurno
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(667, 394)
+        Me.ClientSize = New System.Drawing.Size(712, 394)
         Me.Controls.Add(Me.Agregar)
         Me.Controls.Add(Me.Cancelar)
         Me.Controls.Add(Me.grbPacientes)

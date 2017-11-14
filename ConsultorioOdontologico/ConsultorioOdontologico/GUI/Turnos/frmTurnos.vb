@@ -6,6 +6,9 @@
         CargarCombo(cmbOdontologos, BDHelper2.cargarComboOdontologos(), "legajo", "Odontologo")
         CargarCombo(cmbEstadoTurno, BDHelper2.getEstadosTurno(), "idEstado", "nombre")
         cargarHorarios()
+        dgvTurnos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvTurnos.ClearSelection()
+        cmdAgregar.Enabled = False
     End Sub
 
     Private Sub CargarCombo(ByRef combo As ComboBox, ByRef datos As Data.DataTable, ByVal pk As String, ByVal descripcion As String)
@@ -97,7 +100,7 @@
         frmAgregarTurno.Show()
         cargarHorarios()
         llenarGrid(BDHelper2.GetTurnos(cmbOdontologos.SelectedIndex + 1, calendar.SelectionRange.Start.ToShortDateString))
-
+        dgvTurnos.ClearSelection()
 
 
     End Sub
@@ -126,12 +129,11 @@
                 str += " WHERE fecha = CONVERT(DATE,'" & calendar.SelectionStart.ToShortDateString & "',103) AND hora = '"
                 str += hora & "' AND legajoOdontologo = " & cmbOdontologos.SelectedIndex + 1
             Next
-            MsgBox(str)
             BDHelper2.cambiarEstadoTurnos(str)
             MsgBox("Estado cambiado.")
             cargarHorarios()
             llenarGrid(BDHelper2.GetTurnos(cmbOdontologos.SelectedIndex + 1, calendar.SelectionRange.Start.ToShortDateString))
-
+            dgvTurnos.ClearSelection()
         End If
     End Sub
     Private Sub mostrarDetallesTurno()
@@ -169,6 +171,7 @@
             BDHelper2.eliminarTurnos(str)
             MsgBox("El turno ha sido cancelado.")
             llenarGrid(BDHelper2.GetTurnos(cmbOdontologos.SelectedIndex + 1, calendar.SelectionRange.Start.ToShortDateString))
+            dgvTurnos.ClearSelection()
         End If
     End Sub
 
@@ -188,6 +191,26 @@
             End If
         End If
     End Sub
+
+    Private Sub dgvTurnos_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTurnos.CellClick
+        If cmbOdontologos.SelectedIndex <> -1 Then
+            rtxtDetalles.Clear()
+
+                If validarTurnosOcupados() = False Then
+                    cmdAgregar.Enabled = True
+                    cmdCancelar.Enabled = False
+                    cmbEstadoTurno.Enabled = False
+
+                Else
+                    cmdAgregar.Enabled = False
+                    cmdCancelar.Enabled = True
+                    cmbEstadoTurno.Enabled = True
+                    mostrarDetallesTurno()
+                End If
+        End If
+    End Sub
+
+
 
     Private Sub frmTurnos_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         frmMenu.Show()

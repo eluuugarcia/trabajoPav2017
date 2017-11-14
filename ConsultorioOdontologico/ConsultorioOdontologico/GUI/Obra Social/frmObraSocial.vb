@@ -5,6 +5,7 @@
 
     Private Sub frmObraSocial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CargarCombo(cmbNombreOS, BDHelper2.GetObraSocialSinNT(), "idOS", "nombre")
+        dgvPrestaciones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
 
 
     End Sub

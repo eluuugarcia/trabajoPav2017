@@ -54,10 +54,14 @@ Partial Class frmTurnos
         '
         Me.dgvTurnos.AllowUserToAddRows = False
         Me.dgvTurnos.AllowUserToDeleteRows = False
+        Me.dgvTurnos.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvTurnos.BackgroundColor = System.Drawing.Color.LightGreen
         Me.dgvTurnos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgvTurnos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        Me.dgvTurnos.ColumnHeadersHeight = 30
+        Me.dgvTurnos.ColumnHeadersHeight = 35
+        Me.dgvTurnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgvTurnos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Horario, Me.Paciente, Me.Consulta, Me.Descripcion, Me.Estado, Me.dniPaciente, Me.idPrestacion, Me.idEstado, Me.HoraFin})
         Me.dgvTurnos.Location = New System.Drawing.Point(300, 62)
         Me.dgvTurnos.Name = "dgvTurnos"
@@ -171,6 +175,7 @@ Partial Class frmTurnos
         '
         'cmdAgregar
         '
+        Me.cmdAgregar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdAgregar.Enabled = False
         Me.cmdAgregar.Location = New System.Drawing.Point(666, 409)
         Me.cmdAgregar.Name = "cmdAgregar"
@@ -181,6 +186,8 @@ Partial Class frmTurnos
         '
         'rtxtDetalles
         '
+        Me.rtxtDetalles.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.rtxtDetalles.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtxtDetalles.Location = New System.Drawing.Point(18, 237)
         Me.rtxtDetalles.Name = "rtxtDetalles"
@@ -198,16 +205,6 @@ Partial Class frmTurnos
         Me.lblDetalles.Size = New System.Drawing.Size(230, 20)
         Me.lblDetalles.TabIndex = 12
         Me.lblDetalles.Text = "Detalles del turno seleccionado"
-        '
-        'Db_consultorio_odontologicoDataSet
-        '
-        'Me.Db_consultorio_odontologicoDataSet.DataSetName = "db_consultorio_odontologicoDataSet"
-        'Me.Db_consultorio_odontologicoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        '
-        '
-        '
-
         '
         'lblEstadoTurno
         '
@@ -230,6 +227,7 @@ Partial Class frmTurnos
         '
         'cmdCancelar
         '
+        Me.cmdCancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdCancelar.Enabled = False
         Me.cmdCancelar.Location = New System.Drawing.Point(768, 409)
         Me.cmdCancelar.Name = "cmdCancelar"
@@ -257,6 +255,8 @@ Partial Class frmTurnos
         Me.Name = "frmTurnos"
         Me.Text = "Turnos"
         CType(Me.dgvTurnos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EstadoTurnosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EstadoTurnosBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

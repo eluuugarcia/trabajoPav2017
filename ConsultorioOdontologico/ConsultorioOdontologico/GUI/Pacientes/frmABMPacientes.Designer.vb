@@ -218,6 +218,8 @@ Partial Class frmABMPacientes
         '
         'grbPacientes
         '
+        Me.grbPacientes.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grbPacientes.Controls.Add(Me.Nuevo)
         Me.grbPacientes.Controls.Add(Me.mtxtTelCont)
         Me.grbPacientes.Controls.Add(Me.mtxtDNI)
@@ -287,6 +289,8 @@ Partial Class frmABMPacientes
         '
         'grbOS
         '
+        Me.grbOS.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grbOS.Controls.Add(Me.lblPlan)
         Me.grbOS.Controls.Add(Me.cmbPlan)
         Me.grbOS.Controls.Add(Me.txtNroAfiliado)
@@ -302,6 +306,9 @@ Partial Class frmABMPacientes
         '
         'dgvPacientes
         '
+        Me.dgvPacientes.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.dgvPacientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.dgvPacientes.ColumnHeadersHeight = 20
@@ -399,6 +406,7 @@ Partial Class frmABMPacientes
         '
         'cmdAgregar
         '
+        Me.cmdAgregar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cmdAgregar.Enabled = False
         Me.cmdAgregar.Location = New System.Drawing.Point(12, 470)
         Me.cmdAgregar.Name = "cmdAgregar"
@@ -409,16 +417,18 @@ Partial Class frmABMPacientes
         '
         'cmdModificar
         '
+        Me.cmdModificar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cmdModificar.Enabled = False
         Me.cmdModificar.Location = New System.Drawing.Point(114, 470)
         Me.cmdModificar.Name = "cmdModificar"
         Me.cmdModificar.Size = New System.Drawing.Size(75, 23)
         Me.cmdModificar.TabIndex = 23
-        Me.cmdModificar.Text = "Mofidicar"
+        Me.cmdModificar.Text = "Modificar"
         Me.cmdModificar.UseVisualStyleBackColor = True
         '
         'cmdEliminar
         '
+        Me.cmdEliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cmdEliminar.Enabled = False
         Me.cmdEliminar.Location = New System.Drawing.Point(216, 470)
         Me.cmdEliminar.Name = "cmdEliminar"
@@ -429,6 +439,7 @@ Partial Class frmABMPacientes
         '
         'cmdBorrarCampos
         '
+        Me.cmdBorrarCampos.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cmdBorrarCampos.Location = New System.Drawing.Point(319, 470)
         Me.cmdBorrarCampos.Name = "cmdBorrarCampos"
         Me.cmdBorrarCampos.Size = New System.Drawing.Size(91, 23)

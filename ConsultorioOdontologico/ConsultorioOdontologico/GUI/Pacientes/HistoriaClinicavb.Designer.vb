@@ -43,19 +43,32 @@ Partial Class frmHistoriaClinicavb
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cmdAgregarEntrada = New System.Windows.Forms.Button()
+        Me.dgvRecetas = New System.Windows.Forms.DataGridView()
+        Me.fechaReceta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Odontologo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.legajoOdontologo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MedicamentoRecetado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.idMedicamento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ObservacionesRecetas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lblRecetas = New System.Windows.Forms.Label()
+        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
         CType(Me.dgvHC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvEnfermedades, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvAlergias, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvRecetas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgvHC
         '
+        Me.dgvHC.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvHC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvHC.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Fecha, Me.idPrestacion, Me.Prestacion, Me.idUbicacion, Me.Ubicacion, Me.idTipo, Me.TipoDiente, Me.Observaciones})
         Me.dgvHC.Location = New System.Drawing.Point(12, 25)
         Me.dgvHC.Name = "dgvHC"
         Me.dgvHC.ReadOnly = True
-        Me.dgvHC.Size = New System.Drawing.Size(610, 169)
+        Me.dgvHC.Size = New System.Drawing.Size(609, 182)
         Me.dgvHC.TabIndex = 0
         '
         'Fecha
@@ -111,11 +124,14 @@ Partial Class frmHistoriaClinicavb
         '
         'dgvEnfermedades
         '
+        Me.dgvEnfermedades.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvEnfermedades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvEnfermedades.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idEnfermedad, Me.Nombre, Me.Descripcion})
         Me.dgvEnfermedades.Location = New System.Drawing.Point(9, 255)
         Me.dgvEnfermedades.Name = "dgvEnfermedades"
-        Me.dgvEnfermedades.Size = New System.Drawing.Size(289, 154)
+        Me.dgvEnfermedades.Size = New System.Drawing.Size(288, 167)
         Me.dgvEnfermedades.TabIndex = 2
         '
         'idEnfermedad
@@ -163,11 +179,14 @@ Partial Class frmHistoriaClinicavb
         '
         'dgvAlergias
         '
+        Me.dgvAlergias.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvAlergias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvAlergias.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.dgvAlergias.Location = New System.Drawing.Point(320, 255)
         Me.dgvAlergias.Name = "dgvAlergias"
-        Me.dgvAlergias.Size = New System.Drawing.Size(302, 154)
+        Me.dgvAlergias.Size = New System.Drawing.Size(301, 154)
         Me.dgvAlergias.TabIndex = 6
         '
         'DataGridViewTextBoxColumn1
@@ -188,19 +207,84 @@ Partial Class frmHistoriaClinicavb
         '
         'cmdAgregarEntrada
         '
-        Me.cmdAgregarEntrada.Location = New System.Drawing.Point(478, 426)
+        Me.cmdAgregarEntrada.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cmdAgregarEntrada.Location = New System.Drawing.Point(498, 634)
         Me.cmdAgregarEntrada.Name = "cmdAgregarEntrada"
-        Me.cmdAgregarEntrada.Size = New System.Drawing.Size(144, 23)
+        Me.cmdAgregarEntrada.Size = New System.Drawing.Size(123, 30)
         Me.cmdAgregarEntrada.TabIndex = 10
         Me.cmdAgregarEntrada.Text = "Agregar Entrada"
         Me.cmdAgregarEntrada.UseVisualStyleBackColor = True
+        '
+        'dgvRecetas
+        '
+        Me.dgvRecetas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvRecetas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvRecetas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fechaReceta, Me.Odontologo, Me.legajoOdontologo, Me.MedicamentoRecetado, Me.idMedicamento, Me.ObservacionesRecetas})
+        Me.dgvRecetas.Location = New System.Drawing.Point(9, 463)
+        Me.dgvRecetas.Name = "dgvRecetas"
+        Me.dgvRecetas.Size = New System.Drawing.Size(612, 150)
+        Me.dgvRecetas.TabIndex = 11
+        '
+        'fechaReceta
+        '
+        Me.fechaReceta.HeaderText = "Fecha"
+        Me.fechaReceta.Name = "fechaReceta"
+        '
+        'Odontologo
+        '
+        Me.Odontologo.HeaderText = "Odontologo"
+        Me.Odontologo.Name = "Odontologo"
+        '
+        'legajoOdontologo
+        '
+        Me.legajoOdontologo.HeaderText = "legajo"
+        Me.legajoOdontologo.Name = "legajoOdontologo"
+        Me.legajoOdontologo.Visible = False
+        '
+        'MedicamentoRecetado
+        '
+        Me.MedicamentoRecetado.HeaderText = "Medicamento"
+        Me.MedicamentoRecetado.Name = "MedicamentoRecetado"
+        '
+        'idMedicamento
+        '
+        Me.idMedicamento.HeaderText = "idMedicamento"
+        Me.idMedicamento.Name = "idMedicamento"
+        Me.idMedicamento.Visible = False
+        '
+        'ObservacionesRecetas
+        '
+        Me.ObservacionesRecetas.HeaderText = "Observaciones"
+        Me.ObservacionesRecetas.Name = "ObservacionesRecetas"
+        '
+        'lblRecetas
+        '
+        Me.lblRecetas.AutoSize = True
+        Me.lblRecetas.Location = New System.Drawing.Point(6, 434)
+        Me.lblRecetas.Name = "lblRecetas"
+        Me.lblRecetas.Size = New System.Drawing.Size(47, 13)
+        Me.lblRecetas.TabIndex = 12
+        Me.lblRecetas.Text = "Recetas"
+        '
+        'VScrollBar1
+        '
+        Me.VScrollBar1.Location = New System.Drawing.Point(644, 329)
+        Me.VScrollBar1.Name = "VScrollBar1"
+        Me.VScrollBar1.Size = New System.Drawing.Size(16, 362)
+        Me.VScrollBar1.TabIndex = 13
         '
         'frmHistoriaClinicavb
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(634, 467)
+        Me.ClientSize = New System.Drawing.Size(661, 678)
+        Me.Controls.Add(Me.VScrollBar1)
+        Me.Controls.Add(Me.lblRecetas)
+        Me.Controls.Add(Me.dgvRecetas)
         Me.Controls.Add(Me.cmdAgregarEntrada)
         Me.Controls.Add(Me.dgvAlergias)
         Me.Controls.Add(Me.lblAlergias)
@@ -213,6 +297,7 @@ Partial Class frmHistoriaClinicavb
         CType(Me.dgvHC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvEnfermedades, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvAlergias, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvRecetas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -238,4 +323,13 @@ Partial Class frmHistoriaClinicavb
     Friend WithEvents TipoDiente As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Observaciones As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents cmdAgregarEntrada As System.Windows.Forms.Button
+    Friend WithEvents dgvRecetas As System.Windows.Forms.DataGridView
+    Friend WithEvents fechaReceta As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Odontologo As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents legajoOdontologo As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents MedicamentoRecetado As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents idMedicamento As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ObservacionesRecetas As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents lblRecetas As System.Windows.Forms.Label
+    Friend WithEvents VScrollBar1 As System.Windows.Forms.VScrollBar
 End Class

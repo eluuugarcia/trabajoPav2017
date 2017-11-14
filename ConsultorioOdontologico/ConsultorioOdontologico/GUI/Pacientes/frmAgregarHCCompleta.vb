@@ -8,9 +8,16 @@
         CargarCombo(cmbPrestaciones, BDHelper2.GetPrestaciones(), "idPrestacion", "nombre")
         CargarCombo(cmbUbicacion, BDHelper2.GetUbicaciones(), "idUbicacion", "descripcion")
         CargarCombo(cmbTipoDiente, BDHelper2.GetTipos(), "idTipo", "nombre")
+        CargarCombo(cmbOdontologo, BDHelper2.cargarComboOdontologos(), "legajo", "Odontologo")
+        CargarCombo(cmbMedicamentos, BDHelper2.GetMedicamentos(), "idMedicamento", "droga")
         dgvHC.Rows.Clear()
         dgvEnfermedades.Rows.Clear()
         dgvAlergias.Rows.Clear()
+        dgvRecetas.Rows.Clear()
+        dgvAlergias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvEnfermedades.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvHC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvRecetas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
     End Sub
 
     Private Sub lblPrestacion_Click(sender As Object, e As EventArgs) Handles lblPrestacion.Click
@@ -41,10 +48,6 @@
 
     Private Sub cmdAgregarHC_Click(sender As Object, e As EventArgs) Handles cmdAgregarHC.Click
         dgvHC.Rows.Add(New String() {Date.Now, cmbPrestaciones.SelectedValue, cmbPrestaciones.Text, cmbUbicacion.SelectedValue, cmbUbicacion.Text, cmbTipoDiente.SelectedValue, cmbTipoDiente.Text, rtxtObservaciones.Text})
-        '  MsgBox(dgvHC.Rows(0).Cells("idPrestacion").Value)
-        '  MsgBox(dgvHC.Rows(0).Cells("idUbicacion").Value)
-        '  MsgBox(dgvHC.Rows(0).Cells("idTipo").Value)
-        '  MsgBox(dgvHC.Rows(0).Cells("Observaciones").Value)
 
 
     End Sub
@@ -88,6 +91,12 @@
         Return str
     End Function
 
+    Private Sub frmAgregarHCCompleta_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Me.Hide()
+        frmHistoriaClinicavb.Show()
+    End Sub
+
+
     Private Sub cmdGuardarCambios_Click(sender As Object, e As EventArgs) Handles cmdGuardarCambios.Click
         Dim str As String = ""
         If dgvHC.Rows.Count() <> 1 Then
@@ -100,20 +109,31 @@
             str = agregarAlergia(str)
         End If
 
-        MsgBox(str)
+        If dgvAlergias.Rows.Count <> 1 Then
+            str = agregarReceta(str)
+        End If
 
         BDHelper2.transaccionHistoriaClinica(str)
 
         dgvHC.Rows.Clear()
         dgvEnfermedades.Rows.Clear()
         dgvAlergias.Rows.Clear()
-
     End Sub
 
-    Private Sub frmAgregarHCCompleta_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        Me.Hide()
-        frmHistoriaClinicavb.Show()
+
+    Private Sub cmdAgregarReceta_Click(sender As Object, e As EventArgs) Handles cmdAgregarReceta.Click
+        dgvRecetas.Rows.Add(New String() {Date.Now, cmbOdontologo.Text, cmbOdontologo.SelectedValue, cmbMedicamentos.Text, cmbMedicamentos.SelectedValue, rtxtObservacionesRecetas.Text})
     End Sub
+
+    Private Function agregarReceta(ByVal str As String) As String
+
+        For i = 0 To dgvRecetas.Rows.Count() - 2
+            str += "INSERT INTO Receta(legajoOdontologo, dniPaciente, fecha, idMedicamento, observaciones) VALUES("
+            str += dgvRecetas.Rows(i).Cells("legajo").Value & "," & dni & "," & dgvRecetas.Rows(i).Cells("Fecha").Value & ",'" & dgvRecetas.Rows(i).Cells("idMedicamento").Value & ",'" & dgvRecetas.Rows(i).Cells("Observaciones").Value & "')"
+            str += " "
+        Next
+        Return str
+    End Function
 
 
 End Class
